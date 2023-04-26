@@ -1,0 +1,934 @@
+/**tipografias
+font-family: 'Bebas Neue', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Dongle', sans-serif;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+/*********************INDEX*****************/
+/**desktop**/
+.header{
+    grid-area: header;
+    background-color: rgb(0, 0, 0);
+}
+.section-header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-coffee{
+    display: flex;
+}
+.coffee{
+    color: rgb(106, 174, 174);
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 12px;
+}
+.buscar{
+    padding: 30px 10px;
+}
+.buscar input{
+        width: 240px;
+        height: 40px;
+        padding: 0 20px;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+        outline: none;
+        border: 1px solid silver;
+        border-radius: 30px;
+}
+
+.main{
+    grid-area: main;
+    background-color: black;
+}
+.contenedor{
+    display: flex;
+}
+.contenedor a{
+    padding: 10px 3px 0px 5px;
+}
+.reseñas-comprar{
+    display: flex;
+}
+.carta-sucursal{
+    display: flex;
+}
+
+.imagen-principal{
+    padding: 0px 5px 0px 8px;
+    position: relative;
+    display: inline-block;
+}
+.img-principal{
+    z-index: -1;
+}
+.imagen-principal h2{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 4em;
+    text-align: center;
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(106, 174, 174);
+    display: flex;
+    justify-content: space-around;
+}
+.section-footer{
+    display: flex;
+    flex-direction: row;
+}
+.contacto{
+    text-align: center;
+    margin-left: 500px;
+    font-size: 20px;
+}
+.contacto h3{
+    font-size: 25px;
+}
+.redes{
+    font-size: 20px;
+}
+.redes a{
+    margin-left: 70px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-rows: 100px 1fr 150px;
+}
+/************************MEDIA Q****************************/
+@media (max-width: 1024px){
+
+}
+/*************************TABLET*************************/
+@media (max-width: 778px){
+    /*pagina principal*/
+header{
+    height: 150px;
+    
+}
+.section-header{
+    height: 150px;
+}
+
+.img-logo{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+}
+.coffee h1{
+    font-size: 40px;
+    display: flex;
+    margin-left: 100px;
+}
+.buscar{
+    padding: 40px 30px;
+}
+.buscar input{
+    width: 350px;
+    height: 60px;
+    font-size: 30px;
+}
+.reseñas-comprar{
+    padding-top: 200px;
+    display: flex;
+}
+.vlz{
+    position: absolute;
+    left: 650px;    
+}
+.reseña-img{
+    width: 400px;
+    height: 440px;
+}
+.comprar{
+    width: 400px;
+    height: 440px;
+    margin-left: 10px;
+}
+.carta-sucursal{
+    padding-top: 200px;
+    display: flex;
+}
+.carta-img{
+    width: 400px;
+    height: 440px;
+}
+.sucursal{
+    width: 400px;
+    height: 440px;
+    margin-left: 10px;
+
+}
+.img-principal{
+    width: 100%;
+    height: 1200px;
+}
+.footer{
+    height: 230px;
+    margin-top: auto;
+}
+.section-footer{
+    display: flex;
+    flex-direction: row;
+}
+.redes h2{
+    font-size: 55px;
+}
+.img-face{
+    width: 100px;
+    height: 100px ;
+}
+.img-insta{
+    width:100px ;
+    height: 100px;
+}
+.img-twitter{
+    width: 100px;
+    height: 100px;
+}
+.redes a{
+    margin-left: 100px;
+}
+.contacto{
+    font-size: 35px;
+    margin: 0%;
+}
+.contacto h3{
+    font-size: 40px;
+}
+.vlz{
+    clip-path: inset(30px 10px 90px 10px);
+}
+}
+/*******************TELEFONO*******************/
+@media (max-width: 425px){
+    .comprar{
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+    }
+    .reseñas-comprar{
+        display: flex;
+        flex-direction: column;
+    }
+    .carta-sucursal{
+        display: flex;
+        flex-direction: column;
+    }
+    .sucursal{
+        margin: 0%;
+    }
+    .vlz{
+        position: absolute;
+        left: 250px;  
+        clip-path: inset(30px 10px 90px 10px);
+    }
+    .img-principal{
+        height: 700px;
+    }
+    .imagen-principal h2{
+        font: size 40px;
+    }
+    .footer{
+        height: 400px;
+    }
+    .section-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .redes a{
+        margin-left: 130px;
+    }
+}
+
+
+/***********************************************HEADER MAIN Y FOOTER DE PAGES********************************/
+.header-dos{
+    grid-area: header-dos;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-content: end;
+}
+.section-header-dos{
+    display: flex;
+}
+.img-logo-{
+    padding: 60px 5px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.coffee-dos{
+    display: flex;
+    color: rgb(184, 231, 231);
+    font-size: 10px;
+    position: relative;
+    top: 100px ;
+    right: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+.navbar{
+    display: flex;
+    gap: 10px 20px;
+    margin-left: 320px;
+    align-items: center;
+}
+.inicio-suc{
+    display: flex;
+    gap: 20px;
+}
+.inicio-comp{
+    display: flex;
+    gap: 20px;
+}
+.com-rese{
+    display: flex;
+    gap: 20px;
+}
+.carta-rese{
+    display: flex;
+    gap: 20px;
+}
+.carta-rese{
+    display: flex;
+    gap: 20px;
+}
+.carta-suc{
+    display: flex;
+    gap: 20px;
+}
+
+.main-dos{
+    grid-area: main-dos;
+    background-color:rgb(106, 174, 174) ;
+}
+.footer-dos{
+    grid-area: footer-dos;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.section-footer-dos{
+    display: flex;
+    flex-direction: row;
+}
+.redes-dos{
+    position: relative;
+    margin: auto;
+    left: 50px;
+    bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+.redes-dos a{
+    margin-left: 50px;
+}
+.contacto-dos{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 500px;
+    font-size: 20px;
+}
+.contacto-dos h2{
+    text-align: center;
+}
+.grid-container-dos{
+    display: grid;
+    grid-template-areas: 
+    "header-dos header-dos header-dos"
+    "main-dos main-dos main-dos"
+    "footer-dos footer-dos footer-dos";
+    grid-template-rows: 210px 1fr 150px;
+}
+/***HEADER Y FOOTER DE PAGES****/
+/**************************MEGA Q TABLET*****************************/
+@media (max-width: 778px){
+    .header-dos{
+        grid-area: header-dos;
+        background-color: black;
+        height: 620px;
+        flex-direction: column;
+    }
+    .header-dos section{
+        display: flex;
+        justify-content: center;
+    }
+    .img-logo-{
+        width:200px ;
+        height: 250px;
+        padding-top: 5px;
+    }
+    .coffee-dos h1{
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    .inicio-suc{
+        display: flex;
+    }
+    .com-rese{
+        display: flex;
+    }
+    .carta-rese{
+        display: flex;
+    }
+    .img-inicio{
+        width:305px ;
+        height: 350px;
+    }
+    .img-comprar-dos{
+        width:305px ;
+        height: 350px;
+    }
+    .img-carta-dos{
+        width:305px ;
+        height: 350px;
+    }
+    .img-sucursal-dos{
+        width:305px ;
+        height: 350px;
+    }
+    .img-reseñas-dos{
+        width:305px ;
+        height: 350px;
+    }
+    .navbar{
+        display: flex;
+        gap: 10px 20px;
+        margin-left: 10px;
+        align-items: center;
+    }
+    .main-dos{
+        grid-area: main-dos;
+    }
+    .footer-dos{
+        grid-area: footer-dos;
+        height: 300px;
+        margin-top: auto;
+        justify-content: space-around;
+    }
+    .section-footer-dos{
+        display: flex;
+        flex-direction: row;
+    }
+    .redes-dos h2{
+        font-size: 50px;
+        text-align: center;
+    }
+    .img-face-dos{
+        width: 100px;
+        height: 100px ;
+    }
+    .img-insta-dos{
+        width:100px ;
+        height: 100px;
+    }
+    .img-twitter-dos{
+        width: 100px;
+        height: 100px;
+    }
+    .redes-dos a{
+        margin-left: 70px;
+    }
+    .img-face-dos{
+        width: 90px;
+    }
+    .img-twitter-dos{
+        width: 90px;
+    }
+    .img-insta-dos{
+        width: 90px;
+    }
+    .contacto-dos{
+        font-size: 35px;
+
+        margin-left: 50px;
+    }
+    .contacto-dos h3{
+        font-size: 35px;
+        text-align: center;
+        margin-right: 50px;
+    }
+    .grid-container-dos{
+        display: grid;
+        grid-template-areas: 
+        "header-dos header-dos header-dos"
+        "main-dos main-dos main-dos"
+        "footer-dos footer-dos footer-dos";
+        grid-template-rows: 620px 1fr 300px;
+        grid-template-columns: auto;
+    }
+}
+/*************************MEGA Q TELEFONO****************************/
+@media (max-width: 425px){
+    .header-dos{
+        grid-area: header-dos;
+        height: 850px;
+    }
+    .img-logo-{
+        width:200px;
+        height: 200px;
+    }
+    .coffee-dos h1{
+        font-size: 30px;
+    }
+
+    .img-inicio{
+        width: 100%;
+        height: 300px;
+    }
+    .img-carta-dos{
+        width: 100%;
+        height: 300px;
+    }
+    .img-comprar-dos{
+        width: 100%;
+        height: 300px;
+    }
+    .img-sucursal-dos{
+        width: 100%;
+        height: 300px;
+    }
+    .img-reseñas-dos{
+        width: 100%;
+        height: 300px;
+    }
+
+    .inicio-suc{
+        flex-direction: column;
+    }
+    .inicio-comp{
+        flex-direction: column;
+    }
+    .com-rese{
+        flex-direction: column;
+    }
+    .carta-rese{
+        flex-direction: column;
+    }
+    .carta-suc{
+        flex-direction: column;
+    }
+    
+
+    .main-dos{
+        grid-area: main-dos;
+        height: 1fr;
+    }
+
+    .footer-dos{
+        grid-area: footer-dos;
+        height: 400px;
+    }
+    .section-footer-dos{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+    }
+    .redes-dos{
+        margin-left: 0px;
+        font-size: 60px;
+    }
+    .redes-dos h2{
+        font-size: 30px;
+    }
+    .redes-dos a{
+        margin-left: 10px;
+    }
+    .img-insta-dos{
+        width: 50px;
+    }
+    .img-face-dos{
+        width: 50px;
+    }
+    .img-twitter-dos{
+        width: 50px;
+    }
+    .contacto-dos{
+        font-size: 30px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .contacto-dos h3{
+        font-size: 10px;
+    }
+
+
+    .grid-container-dos{
+        display: grid;
+        grid-template-areas: 
+        "header-dos header-dos header-dos"
+        "main-dos main-dos main-dos"
+        "footer-dos footer-dos footer-dos";
+        grid-template-rows: 850px 1fr 400px;
+        grid-template-columns: auto;
+    }
+}
+
+
+/*******************RESEÑAS************/
+.reseñas{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+.escribir-reseña{
+    margin-left: 200px;
+}
+.dejar-comentario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.area-comentar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 600px;
+    margin: 30px 0px 10px 400px;
+}
+.img-escribir{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0px 5px 0px 0px;
+}
+.escribir{
+    width: 500px;
+    height: 70px;
+    background-color: rgb(209, 209, 212);
+    border: 0;
+    border-radius: 5px;
+}
+.boton{
+    background-color: rgb(75, 110, 159);
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 5px 0px 0px 483px;
+    color: white;
+}
+.testimonios h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+    margin: 50px 0px;
+    font-weight: 500;
+    padding: 10px 20px;
+    width: 100%;
+}
+.testimonios-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.testimonios-caja{
+    width: 500px;
+    box-shadow: 2px 2px 3px black;
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.perfil-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.perfil-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.name-user span{
+    color: rgb(105, 102, 102);
+}
+.caja-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.comentarios p{
+    color: rgb(53, 53, 53);
+}
+
+/**************MEDIA Q TABLET**************/
+@media (max-width: 778px){
+.reseñas{
+    font-size: 40px;
+}
+.area-comentar{
+    margin: 30px 0px 0px 200px;
+    width: 900px;
+    height: 250px;
+}
+.escribir{
+    width: 750px;
+    height: 150px;
+}
+.img-escribir{
+    width: 80px;
+    height: 80px;
+}
+.boton{
+    width: 150px;
+    height: 45px;
+    font-size: 30px;
+    margin-left: 680px;
+    border-radius: 10px;
+}
+.testimonios h1{
+    font-size: 80px;
+}
+.testimonios-caja{
+    width: 600px;
+    height: 300px;
+}
+.comentarios{
+    font-size: 25px;
+}
+.perfil-img{
+    height: 100px;
+    width: 100px;
+}
+.name-user{
+    font-size: 30px;
+}
+.estrellas img{
+    width: 35px;
+    height: 35px;
+}
+}
+/**********************CARTA*********************/
+.contenedor-carrusel{
+    border: 2px solid black;
+    overflow: hidden;
+    height: 400px;
+    width: 700px;
+    margin-left: 330px;
+    margin-top: 20px;
+}
+.carrusel{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.img-carrusel{
+    height: 100%;
+    width: 100%;
+}
+.flechas{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.nuestra-carta{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.beb-dul{
+    display: flex;
+}
+.carta{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+
+.bebidas{
+    color: black;
+    border: 20px solid rgb(63, 239, 245);
+    background-color: rgb(63, 239, 245);
+    border-radius: 15px;
+    font-family: 'Dongle', sans-serif;
+    box-shadow: 0px 3px 3px rgb(117, 117, 117);
+    list-style-type: none;
+    font-size: 20px;
+}
+.comida-dulce{
+    color: black;
+    border: 20px solid rgb(63, 239, 245);
+    background-color:rgb(63, 239, 245) ;
+    border-radius: 15px;
+    font-family: 'Dongle', sans-serif;
+    box-shadow: 0px 3px 3px rgb(117, 117, 117);
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 210px;
+    justify-content: center;
+
+}
+.comida-salada{
+    color: black;
+    border: 20px solid rgb(63, 239, 245);
+    background-color: rgb(63, 239, 245);
+    border-radius: 15px;
+    font-family: 'Dongle', sans-serif;
+    box-shadow: 0px 3px 3px rgb(117, 117, 117);
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 20px;
+}
+@media (max-width: 778px){
+    .nuestra-carta{
+        font-size: 70px;
+    }
+    .beb-dul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .carta{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .bebidas{
+        width: 400px;
+        height: 980px;
+        font-size: 45px;
+    }
+    .comida-dulce{
+        width: 400px;
+        height: 980px;
+        font-size: 45px;
+    }
+    .comida-salada{
+        width: 700px;
+        height: 990px;
+        font-size: 45px;
+        margin-top: 50px;
+        margin-left: 300px;
+    }
+}
+
+/*******************COMPRAR******************************/
+
+.nuestros-cafes{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.nuestras-cafeteras{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 20px;
+}
+
+.cafés{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 40px;
+}
+.card{
+    border: 8px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+    gap: 15px;
+    color: black;
+    box-shadow: 0px 3px 3px rgb(117, 117, 117);
+    font-family: 'Dongle', sans-serif;
+}
+
+.cafeteras{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.cafeteras-dos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+/********************MEDIA Q TABLET*********************/
+@media (max-width: 778px){
+    .nuestros-cafes{
+        font-size: 50px;
+    }
+}
+
+/*******************SUCURSAL*******************/
+
+.main-h1{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+}
+.section-sucursal{
+    display: flex;
+}
+.mapa{
+    margin: 20px 20px 20px 30px;
+}
+.sucursal-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 200px;
+    font-family: 'Dongle', sans-serif;
+}
+
+
+
+/**RESEÑAS**/
+
+
+
+
+
+
