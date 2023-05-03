@@ -303,10 +303,10 @@ header{
     flex-direction: row;
     justify-content: flex-start;
 }
-.coffee-dos{
+.coffee-dos h1{
     display: flex;
     color: rgb(184, 231, 231);
-    font-size: 10px;
+    font-size: 20px;
     position: relative;
     top: 100px ;
     right: 20px;
@@ -315,7 +315,7 @@ header{
 .navbar{
     display: flex;
     gap: 10px 20px;
-    margin-left: 320px;
+    margin-left: 300px;
     align-items: center;
 }
 .inicio-suc{
@@ -359,27 +359,36 @@ header{
     flex-direction: row;
 }
 .redes-dos{
-    margin-top: 25px;
     left: 50px;
     bottom: 5px;
     color: rgb(255, 255, 255);
     font-size: 17px;
+    padding: 15px 0px 10px 0px;
+}
+.redes-dos h2{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 500px;
+    margin-left: 30px;
 }
 .redes-dos a{
-    margin-left: 50px;
+    margin-left: 100px;
 }
 .contacto-dos{
     text-align: center;
     margin-left: 500px;
-    font-size: 20px;
-    padding: 20px 0px 10px 0px;
+    padding: 15px 0px 10px 0px;
 }
 .contacto-dos h2{
-    padding-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    padding-bottom: 15px;
 }
 .contacto-dos h3{
     text-align: center;
-    padding: 0px 10px 10px 0px;
+    padding: 0px 10px 0px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    width: 400px;
 }
 .grid-container-dos{
     display: grid;
@@ -472,7 +481,7 @@ header{
         flex-direction: row;
     }
     .redes-dos h2{
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
     }
     .img-face-dos{
@@ -491,18 +500,21 @@ header{
         margin-left: 80px;
     }
     .img-face-dos{
-        width: 80px;
+        width: 70px;
     }
     .img-twitter-dos{
-        width: 80px;
+        width: 70px;
     }
     .img-insta-dos{
-        width: 80px;
+        width: 70px;
     }
     .contacto-dos{
         font-size: 35px;
 
         margin-left: 50px;
+    }
+    .contacto-dos h2{
+        font-size: 40px ;
     }
     .contacto-dos h3{
         font-size: 35px;
@@ -880,6 +892,16 @@ header{
     font-size: 20px;
     margin-left: 20px;
 }
+.carousel-inner{
+    margin-bottom: 20px;
+}
+.ca{
+    width: 1260px;
+    height: 600px;
+    margin-left: 90px;
+}
+
+/*********************MEDIA Q TABLET********************************/
 @media (max-width: 778px){
     .nuestra-carta{
         font-size: 70px;
