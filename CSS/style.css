@@ -182,6 +182,7 @@ header{
 .img-principal{
     width: 100%;
     height: 1200px;
+    padding: 20px 0px 0px;
 }
 .footer{
     height: 230px;
@@ -193,6 +194,7 @@ header{
 }
 .redes h2{
     font-size: 55px;
+    padding: 10px;
 }
 .img-face{
     width: 100px;
@@ -245,12 +247,14 @@ header{
     }
     .img-principal{
         height: 700px;
+        padding: 10px 0px 0px;
     }
     .imagen-principal h2{
-        font: size 40px;
+        font-size: 60px;
+        width: 700px;
     }
     .footer{
-        height: 400px;
+        height: 460px;
     }
     .section-footer{
         display: flex;
@@ -258,6 +262,26 @@ header{
     }
     .redes a{
         margin-left: 130px;
+    }
+    .redes h2{
+        display: flex;
+        text-align: center;
+        font-size: 50px;
+    }
+    .img-face{
+        width:80px ;
+        height: 80px;
+    }
+    .img-insta{
+        width:80px ;
+        height: 80px;
+    }
+    .img-twitter{
+        width:80px ;
+        height: 80px;
+    }
+    .redes a{
+        margin-left: 140px;
     }
 }
 
@@ -545,8 +569,6 @@ header{
     .carta-suc{
         flex-direction: column;
     }
-    
-
     .main-dos{
         grid-area: main-dos;
         height: 1fr;
@@ -655,7 +677,7 @@ header{
     display: flex;
     justify-content: center;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 2.5rem;
+    font-size: 30px;
     margin: 50px 0px;
     font-weight: 500;
     padding: 10px 20px;
@@ -714,6 +736,9 @@ header{
 .reseñas{
     font-size: 40px;
 }
+.reseñas h2{
+    font-size: 45px;
+}
 .area-comentar{
     margin: 30px 0px 0px 200px;
     width: 900px;
@@ -734,12 +759,20 @@ header{
     margin-left: 680px;
     border-radius: 10px;
 }
+
 .testimonios h1{
-    font-size: 80px;
+    font-size: 60px;
+    margin: 30px;
+    margin-right: 0px;
+    padding-right: 0%;
+    justify-content: left;
+    margin-left: 450px;
+    width: 100px;
 }
+
 .testimonios-caja{
     width: 600px;
-    height: 300px;
+    height: 270px;
 }
 .comentarios{
     font-size: 25px;
@@ -749,12 +782,52 @@ header{
     width: 100px;
 }
 .name-user{
-    font-size: 30px;
+    font-size: 35px;
 }
 .estrellas img{
     width: 35px;
     height: 35px;
 }
+.comentarios p{
+    font-size: 30px;
+}
+}
+
+/*******************MEDIA Q TELEFONO***************************************/
+@media (max-width: 425px){
+    .dejar-comentario{
+        padding: 30px 20px;
+    }
+    .area-comentar{
+        padding: 10px;
+        margin: 0%;
+    }
+    .reseñas h2{
+        margin: 10px;
+    }
+    .testimonios h1{
+        margin-left: 300px;
+        margin-top: 0%;
+        width: 200px;
+    }
+    .testimonios-caja{
+        width: 800px;
+        height: 300px;
+    }
+    .comentarios p{
+        font-size: 40px;
+    }
+    .name-user{
+        font-size: 40px;
+    }
+    .perfil-img{
+        height: 120px;
+        width: 120px;
+    }
+    .estrellas img{
+        width: 50px;
+        height: 50px;
+    }
 }
 
 /**********************CARTA*********************/
@@ -891,8 +964,7 @@ header{
 }
 /*******************MEDIA Q TELEFONO***************************************/
 @media (max-width: 425px){
-    .nuestros-cafes{
-    }
+
     .nuestras-cafeteras{
         margin-top: 0px;
     }
@@ -928,7 +1000,7 @@ header{
 }
 /*******************SUCURSAL*******************/
 
-.main-dos h1{
+.text-suc h1{
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     padding: 30px;
@@ -982,7 +1054,7 @@ header{
 
 /******************MEDIA Q TABLET*************************/
 @media (max-width: 768px){
-    .main-dos h1{
+    .text-suc h1{
         font-size: 40px;
     }
     .sucursal-text{
