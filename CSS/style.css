@@ -398,7 +398,7 @@ header{
     "footer-dos footer-dos footer-dos";
     grid-template-rows: 210px 1fr 150px;
 }
-/***HEADER Y FOOTER DE PAGES****/
+
 /***********MEGA Q PORTATIL***********/
 @media (max-width: 1024px){
     .img-logo-{
@@ -457,12 +457,11 @@ header{
         height: 350px;
     }
     .img-reseñas-dos{
-        width:305px ;
+        width:300px ;
         height: 350px;
     }
     .navbar{
         display: flex;
-        gap: 10px 20px;
         margin-left: 5px;
         margin-right: 5px;
         align-items: center;
@@ -510,16 +509,19 @@ header{
     }
     .contacto-dos{
         font-size: 35px;
-
         margin-left: 50px;
     }
     .contacto-dos h2{
         font-size: 40px ;
+        margin-bottom: 0%;
+        padding-bottom: 0%;
     }
     .contacto-dos h3{
         font-size: 35px;
         text-align: center;
         padding: 15px 5px 5px 0px;
+        width: 100%;
+        margin-bottom: 0%;
     }
     .grid-container-dos{
         display: grid;
@@ -848,6 +850,7 @@ header{
     font-family: 'Josefin Sans', sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .beb-dul{
     display: flex;
@@ -867,6 +870,9 @@ header{
     box-shadow: 0px 3px 3px rgb(117, 117, 117);
     list-style-type: none;
     font-size: 20px;
+}
+.bebidas li{
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .comida-dulce{
     color: black;
@@ -913,26 +919,60 @@ header{
     .carta{
         display: flex;
         flex-direction: column;
-        
     }
     .bebidas{
         width: 400px;
-        height: 980px;
+        height: 1250px;
         font-size: 45px;
     }
     .comida-dulce{
-        width: 400px;
-        height: 980px;
+        width: 500px;
+        height: 1250px;
         font-size: 45px;
     }
     .comida-salada{
         width: 700px;
-        height: 990px;
+        height: 1300px;
         font-size: 45px;
         margin-top: 50px;
         margin-left: 300px;
     }
+    .ca{
+        margin-left: 0px;
+        width: 1290px;
+    }
 }
+/*******************MEDIA Q TELEFONO**********************************/
+@media (max-width: 425px){
+    .beb-dul{
+        display: flex;
+        flex-direction: column;
+    }
+    .bebidas{
+        margin-left: 120px;
+        width: 500px;
+        margin-bottom: 50px;
+        font-size: 40px;
+        height: 1100px;
+    }
+    .comida-dulce{
+        margin-left: 120px;
+        font-size: 40px;
+        height: 1100px;
+    }
+    .comida-salada{
+        margin-left: 20px;
+        width: 660px;
+        font-size: 40px;
+        height: 1200px;
+    }
+    .ca{
+        margin: 10px 10px 10px 10px ;
+        width: 690px;
+    }
+}
+
+
 
 /*******************COMPRAR******************************/
 
