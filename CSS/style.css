@@ -96,12 +96,18 @@ body{
     text-align: center;
     margin-left: 500px;
     font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 20px;
 }
+
 .contacto h3{
     font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .redes{
     font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 20px;
 }
 .redes a{
     margin-left: 70px;
@@ -197,15 +203,15 @@ header{
     padding: 10px;
 }
 .img-face{
-    width: 100px;
+    width: 90px;
     height: 100px ;
 }
 .img-insta{
-    width:100px ;
+    width: 90px;
     height: 100px;
 }
 .img-twitter{
-    width: 100px;
+    width: 90px;
     height: 100px;
 }
 .redes a{
@@ -214,6 +220,9 @@ header{
 .contacto{
     font-size: 35px;
     margin: 0%;
+}
+.contacto  h2{
+    margin-top: 30px;
 }
 .contacto h3{
     font-size: 40px;
@@ -870,9 +879,6 @@ header{
     box-shadow: 0px 3px 3px rgb(117, 117, 117);
     list-style-type: none;
     font-size: 20px;
-}
-.bebidas li{
-    font-family: 'Roboto Condensed', sans-serif;
 }
 .comida-dulce{
     color: black;
