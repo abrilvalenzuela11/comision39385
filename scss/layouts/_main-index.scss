@@ -1,0 +1,240 @@
+.main {
+	grid-area: main;
+	background-color: $background-color_2;
+}
+.contenedor {
+	display: flex;
+	a {
+		padding: 10px 3px 0px 5px;
+	}
+}
+.reseñas-comprar {
+	display: flex;
+    .reseña-img:hover{
+        transform: scale(103%);
+    }
+    .comprar:hover{
+        transform: scale(103%);
+    }
+}
+.vlz:hover{
+    transform: scale(103%);
+}
+.carta-sucursal {
+	display: flex;
+    .carta-img:hover{
+        transform: scale(103%);
+    }
+    .sucursal:hover{
+        transform: scale(103%);
+    }
+}
+.imagen-principal {
+	padding: 0px 5px 0px 8px;
+	position: relative;
+	display: inline-block;
+	h2 {
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+		font-size: 4rem;
+		text-align: center;
+		font-family: $font-family_2;
+	}
+}
+.img-principal {
+	z-index: -1;
+}
+
+/******************************************MEDIA Q TABLET***********************************************************/
+@media (max-width: 778px){
+    .reseñas-comprar {
+        padding-top: 200px;
+        display: flex;
+    }
+    .vlz {
+        position: absolute;
+        left: 800px;
+        clip-path: inset(30px 10px 90px 10px);
+    }
+    .reseña-img {
+        width: 480px;
+        height: 490px;
+    }
+    .comprar {
+        width: 480px;
+        height: 490px;
+        margin-left: 10px;
+    }
+    .carta-sucursal {
+        padding-top: 200px;
+        display: flex;
+    }
+    .carta-img {
+        width: 480px;
+        height: 490px;
+    }
+    .sucursal {
+        width: 480px;
+        height: 490px;
+        margin-left: 10px;
+    }
+    .img-principal {
+        width: 100%;
+        height: 1400px;
+        padding: 20px 0px 0px;
+    }
+    .imagen-principal {
+        h2 {
+            font-size: 6rem;
+            width: 1500px;
+        }
+    }
+}
+
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 425px) {
+.comprar {
+	display: flex;
+	flex-direction: column;
+	margin: 0%;
+}
+.reseñas-comprar {
+	display: flex;
+	flex-direction: column;
+    padding-top: 400px;
+    .reseña-img{
+        width: 830px;
+        height: 700px;
+    }
+    .comprar{
+        width: 830px;
+        height: 700px;
+    }
+}
+.carta-sucursal {
+	display: flex;
+	flex-direction: column;
+    padding-top: 400px;
+    .carta-img{
+        width: 830px;
+        height: 700px;
+        margin-left: 10px;
+    }
+    .sucursal{
+        width: 830px;
+        height: 700px;
+        margin-left: 10px;
+    }
+}
+.sucursal {
+	margin: 0%;
+}
+.vlz {
+	position: absolute;
+	left: 600px;
+	clip-path: inset(30px 10px 90px 10px);
+    width: 500px;
+    height: 400px;
+}
+.img-principal {
+	height: 1500px;
+	padding: 10px 0px 0px;
+    width: 1680px;
+}
+.imagen-principal{
+    h2 {
+		font-size: 7rem;
+		width: 1600px;
+	}
+}
+
+
+/******************************************MEDIA Q TELEFONO 375***********************************************************/
+@media (max-width: 375px) {
+    .reseñas-comprar {
+        .reseña-img{
+            width: 720px;
+            height: 700px;
+            margin-left: 10px;
+        }
+        .comprar{
+            width: 720px;
+            height: 700px;
+            margin-left: 10px;
+        }
+    }
+    .carta-sucursal {
+        display: flex;
+        flex-direction: column;
+        padding-top: 400px;
+        .carta-img{
+            width: 720px;
+            height: 700px;
+            margin-left: 20px;
+        }
+        .sucursal{
+            width: 720px;
+            height: 700px;
+            margin-left: 20px;
+        }
+    }
+    .vlz {
+        left: 550px;
+    }
+    .img-principal {
+        width: 1490px;
+    }
+    .imagen-principal{
+        h2 {
+            font-size: 7rem;
+            width: 1500px;
+        }
+    }
+}
+/******************************************MEDIA Q TELEFONO 320***********************************************************/
+@media (max-width: 320px) {
+    .reseñas-comprar {
+        .reseña-img{
+            width: 610px;
+            height: 600px;
+            margin-left: 10px;
+        }
+        .comprar{
+            width: 610px;
+            height: 600px;
+            margin-left: 10px;
+        }
+    }
+    .carta-sucursal {
+        display: flex;
+        flex-direction: column;
+        padding-top: 400px;
+        .carta-img{
+            width: 610px;
+            height: 600px;
+            margin-left: 10px;
+        }
+        .sucursal{
+            width: 610px;
+            height: 600px;
+            margin-left: 10px;
+        }
+    }
+    .vlz {
+        left: 400px;
+    }
+    .img-principal {
+        height: 1400px;
+        padding: 10px 0px 0px;
+        width: 1260px;
+    }
+    .imagen-principal{
+        h2 {
+            font-size: 7rem;
+            width: 1270px;
+        }
+    }
+}}
