@@ -1,0 +1,160 @@
+.footer-dos{
+    grid-area: footer-dos;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.section-footer-dos{
+    display: flex;
+    flex-direction: row;
+}
+.redes-dos{
+    left: 50px;
+    bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    padding: 15px 0px 10px 0px;
+}
+
+.redes-dos h2{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 550px;
+    margin-left: 30px;
+
+}
+.redes-dos a{
+    margin-left: 100px;
+}
+.contacto-dos{
+    text-align: center;
+    margin-left: 500px;
+    padding: 15px 0px 10px 0px;
+}
+.contacto-dos h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.contacto-dos h3{
+    text-align: center;
+    padding: 0px 10px 0px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    width: 450px;
+}
+.grid-container-dos{
+    display: grid;
+    grid-template-areas: 
+    "header-dos header-dos header-dos"
+    "main-dos main-dos main-dos"
+    "footer-dos footer-dos footer-dos";
+    grid-template-rows: 210px 1fr 150px;
+}
+/******************************************MEDIA Q TABLET***********************************************************/
+@media (max-width: 778px){
+.footer-dos {
+	grid-area: footer-dos;
+	height: 300px;
+	margin-top: auto;
+	justify-content: space-around;
+}
+.section-footer-dos {
+	display: flex;
+	flex-direction: row;
+}
+.redes-dos {
+	h2 {
+		font-size: 50px;
+		text-align: center;
+        margin-left: 0%;
+	}
+	a {
+		margin-left: 80px;
+	}
+}
+.img-face-dos {
+	width: 100px;
+	height: 100px;
+	width: 70px;
+}
+.img-insta-dos {
+	width: 100px;
+	height: 100px;
+	width: 70px;
+}
+.img-twitter-dos {
+	width: 100px;
+	height: 100px;
+	width: 70px;
+}
+.contacto-dos {
+	font-size: 35px;
+    margin-left: 40px;
+	h2 {
+		font-size: 50px;
+		margin-bottom: 30px;
+	}
+	h3 {
+		font-size: 35px;
+		text-align: center;
+		padding: 15px 5px 5px 0px;
+		width: 100%;
+		margin-bottom: 0%;
+	}
+}
+.grid-container-dos {
+	display: grid;
+	grid-template-areas: "header-dos header-dos header-dos" "main-dos main-dos main-dos" "footer-dos footer-dos footer-dos";
+	grid-template-rows: 620px 1fr 300px;
+	grid-template-columns: auto;
+}
+}
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 425px) {
+    .footer-dos {
+        grid-area: footer-dos;
+        height: 600px;
+    }
+    .section-footer-dos {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+    }
+    .redes-dos {
+        margin: 20px;
+        h2 {
+            font-size: 60px;
+            padding: 15px 5px 0px 5px;
+            width: 1000px;
+        }
+        a {
+            margin-left: 200px;
+        }
+    }
+    .img-insta-dos {
+        width: 90px;
+    }
+    .img-face-dos {
+        width: 90px;
+    }
+    .img-twitter-dos {
+        width: 90px;
+    }
+    .contacto-dos {
+        h2{
+            font-size: 60px;
+            margin: 0px;}
+        h3 {
+            font-size: 50px;
+            padding-left: 5px;
+        }
+    }
+    .grid-container-dos {
+        display: grid;
+        grid-template-areas: "header-dos header-dos header-dos" "main-dos main-dos main-dos" "footer-dos footer-dos footer-dos";
+        grid-template-rows: 1500px 1fr 600px;
+        grid-template-columns: auto;
+    }
+    
+}
