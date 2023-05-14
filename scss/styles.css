@@ -484,7 +484,7 @@
   display: flex;
   flex-direction: row;
   align-content: end;
-  width: 1530px;
+  width: 1540px;
 }
 
 .section-header-dos {
@@ -615,14 +615,17 @@
   .img-inicio {
     width: 360px;
     height: 400px;
+    margin-left: 15px;
   }
   .img-comprar-dos {
     width: 360px;
     height: 400px;
+    position: relative;
   }
   .img-carta-dos {
     width: 360px;
     height: 400px;
+    position: relative;
   }
   .img-sucursal-dos {
     width: 360px;
@@ -651,6 +654,7 @@
   .img-logo- {
     width: 400px;
     height: 400px;
+    bottom: 70px;
   }
   .coffee-dos h1 {
     font-size: 30px;
@@ -658,10 +662,13 @@
   .img-inicio {
     width: 700px;
     height: 600px;
+    position: relative;
+    margin-left: 0%;
   }
   .img-carta-dos {
     width: 700px;
     height: 600px;
+    position: relative;
   }
   .img-comprar-dos {
     width: 700px;
@@ -734,7 +741,7 @@
   display: grid;
   grid-area: main-dos;
   background-color: rgb(106, 174, 174);
-  width: 1530px;
+  width: 1540px;
 }
 
 .nuestra-carta {
@@ -933,6 +940,7 @@
   display: flex;
   justify-content: space-around;
   color: white;
+  width: 1540px;
 }
 
 .section-footer-dos {
@@ -951,11 +959,12 @@
 .redes-dos h2 {
   font-family: "Josefin Sans", sans-serif;
   width: 550px;
-  margin-left: 30px;
+  margin-left: 40px;
+  margin-bottom: 20px;
 }
 
 .redes-dos a {
-  margin-left: 100px;
+  margin-left: 90px;
 }
 
 .contacto-dos {
@@ -1021,7 +1030,7 @@
   }
   .contacto-dos {
     font-size: 35px;
-    margin-left: 40px;
+    margin-left: 60px;
   }
   .contacto-dos h2 {
     font-size: 50px;
@@ -1085,5 +1094,441 @@
     grid-template-areas: "header-dos header-dos header-dos" "main-dos main-dos main-dos" "footer-dos footer-dos footer-dos";
     grid-template-rows: 1500px 1fr 600px;
     grid-template-columns: auto;
+  }
+}
+.nuestros-cafes {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Bebas Neue", cursive;
+  margin-top: 30px;
+}
+
+.nuestras-cafeteras {
+  margin-top: 40px;
+}
+.nuestras-cafeteras h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Bebas Neue", cursive;
+  margin-top: 60px;
+}
+
+.cafés {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.card {
+  border: 8px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+  align-items: center;
+  gap: 15px;
+  color: rgb(0, 0, 0);
+  box-shadow: 0px 3px 3px rgb(117, 117, 117);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.card:hover {
+  transform: scale(104%);
+}
+
+.cafeteras {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.cafeteras-dos {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/********************MEDIA Q TABLET*********************/
+@media (max-width: 778px) {
+  .nuestros-cafes {
+    font-size: 50px;
+  }
+}
+/**************************MEDIA Q TELEFONO*********************/
+@media (max-width: 425px) {
+  .nuestras-cafeteras {
+    margin-top: 0px;
+  }
+  .nuestras-cafeteras h1 {
+    padding: 0px;
+  }
+  .cafés {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    margin: 0px;
+  }
+  .cafeteras {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    margin-top: 0px;
+  }
+  .cafeteras-dos {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .card {
+    width: 400px;
+    margin-left: 70px;
+  }
+  .card a {
+    font-size: 20px;
+  }
+}
+.text-suc h1 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+.section-sucursal {
+  display: flex;
+}
+
+.mapa {
+  padding: 20px 15px 0px 60px;
+}
+
+.sucursal-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  margin-left: 200px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.galery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  grid-gap: 5px;
+  padding: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.galery-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid-item:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.grid-item:nth-child(3) {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.grid-item:nth-child(6) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+/******************MEDIA Q TABLET*************************/
+@media (max-width: 768px) {
+  .text-suc h1 {
+    font-size: 40px;
+  }
+  .sucursal-text {
+    font-size: 22px;
+    margin-left: 100px;
+    margin-top: 130px;
+  }
+}
+/*********************MEDIA Q TELEFONO*****************************/
+@media (max-width: 425px) {
+  .main-dos h1 {
+    padding: 40px;
+    font-size: 60px;
+  }
+  .section-sucursal {
+    display: flex;
+    flex-direction: column;
+  }
+  .mapa- {
+    padding: 10px;
+    width: 1400px;
+    height: 800px;
+  }
+  .sucursal-text {
+    margin: 30px 10px 20px 10px;
+    font-size: 50px;
+  }
+  .galery-container {
+    padding: 10px;
+  }
+}
+.reseñas {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+}
+
+.escribir-reseña {
+  margin-left: 200px;
+}
+
+.dejar-comentario {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+.dejar-comentario .area-comentar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 600px;
+  margin: 30px 0px 10px 400px;
+}
+.dejar-comentario .area-comentar .img-escribir {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0px 5px 0px 0px;
+}
+.dejar-comentario .area-comentar .escribir {
+  width: 500px;
+  height: 70px;
+  background-color: rgb(209, 209, 212);
+  border: 0;
+  border-radius: 5px;
+}
+.dejar-comentario .boton {
+  background-color: rgb(75, 110, 159);
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 5px 0px 0px 483px;
+  color: rgb(184, 231, 231);
+}
+
+.testimonios h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+  font-weight: 500;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.testimonios-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.testimonios-caja {
+  width: 500px;
+  box-shadow: 2px 2px 3px black;
+  background-color: white;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.perfil-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.perfil-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: center;
+     object-fit: center;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.name-user {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.name-user strong {
+  font-family: "Poppins", sans-serif;
+}
+.name-user span {
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+.caja-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.comentarios p {
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+}
+
+/**************MEDIA Q TABLET**************/
+@media (max-width: 778px) {
+  .reseñas {
+    font-size: 40px;
+  }
+  .reseñas h2 {
+    font-size: 45px;
+  }
+  .dejar-comentario {
+    width: 700px;
+    margin-left: 130px;
+  }
+  .dejar-comentario .area-comentar {
+    margin: 30px 0px 0px 200px;
+    width: 900px;
+    height: 250px;
+  }
+  .dejar-comentario .area-comentar .escribir {
+    width: 750px;
+    height: 150px;
+  }
+  .dejar-comentario .area-comentar .img-escribir {
+    width: 80px;
+    height: 80px;
+  }
+  .dejar-comentario .boton {
+    width: 150px;
+    height: 45px;
+    font-size: 30px;
+    margin-left: 680px;
+    border-radius: 10px;
+  }
+  .testimonios h1 {
+    font-size: 60px;
+    margin: 30px;
+    margin-right: 0px;
+    padding-right: 0%;
+    justify-content: left;
+    margin-left: 600px;
+    width: 100px;
+  }
+  .testimonios-caja {
+    width: 680px;
+    height: 300px;
+  }
+  .comentarios {
+    font-size: 25px;
+  }
+  .comentarios p {
+    font-size: 30px;
+  }
+  .perfil-img {
+    height: 100px;
+    width: 100px;
+  }
+  .name-user {
+    font-size: 35px;
+  }
+  .estrellas img {
+    width: 35px;
+    height: 35px;
+  }
+}
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 425px) {
+  .reseñas h1 {
+    font-size: 100px;
+  }
+  .reseñas h2 {
+    font-size: 80px;
+  }
+  .dejar-comentario {
+    padding: 30px 20px;
+    width: 1000px;
+    margin-left: 150px;
+  }
+  .dejar-comentario .area-comentar {
+    padding: 10px;
+    margin: 0%;
+    width: 1200px;
+    height: 400px;
+  }
+  .dejar-comentario .area-comentar .escribir {
+    height: 300px;
+    width: 1000px;
+  }
+  .dejar-comentario .area-comentar .img-escribir {
+    width: 150px;
+    height: 150px;
+  }
+  .dejar-comentario .boton {
+    margin-left: 950px;
+    width: 200px;
+    height: 80px;
+  }
+  .reseñas h2 {
+    margin: 10px;
+  }
+  .testimonios h1 {
+    margin-left: 500px;
+    margin-top: 70px;
+    width: 600px;
+    font-size: 100px;
+  }
+  .testimonios-contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonios-caja {
+    width: 1200px;
+    height: 470px;
+  }
+  .name-user strong {
+    font-size: 50px;
+  }
+  .name-user span {
+    font-size: 45px;
+  }
+  .perfil-img {
+    height: 180px;
+    width: 180px;
+  }
+  .estrellas img {
+    width: 70px;
+    height: 70px;
+  }
+  .comentarios p {
+    font-size: 50px;
   }
 }/*# sourceMappingURL=styles.css.map */

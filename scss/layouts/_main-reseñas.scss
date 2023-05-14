@@ -1,0 +1,264 @@
+.reseñas {
+	text-align: center;
+	font-family: $font-family_2;
+	font-size: 20px;
+}
+.escribir-reseña {
+	margin-left: 200px;
+}
+.dejar-comentario {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 100%;
+	.area-comentar {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		padding: 15px;
+		background-color: $background-color_5;
+		border-radius: 10px;
+		overflow: hidden;
+		width: 600px;
+		margin: 30px 0px 10px 400px;
+
+		.img-escribir {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			overflow: hidden;
+			margin: 0px 5px 0px 0px;
+		}
+		.escribir {
+			width: 500px;
+			height: 70px;
+			background-color: $background-color_6;
+			border: 0;
+			border-radius: 5px;
+		}
+	}
+	.boton {
+		background-color: $background-color_7;
+		border-radius: 5px;
+		padding: 5px 15px;
+		margin: 5px 0px 0px 483px;
+		color: $color_1;
+	}
+}
+.testimonios {
+	h1 {
+		display: flex;
+		justify-content: center;
+		font-family: $font-family_2;
+		font-size: 40px;
+		margin: 40px 0px 20px;
+		font-weight: 500;
+		padding: 10px 20px;
+		width: 100%;
+	}
+}
+.testimonios-contenedor {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	
+}
+.testimonios-caja {
+	width: 500px;
+	box-shadow: 2px 2px 3px black;
+	background-color: $background-color_5;
+	padding: 20px;
+	margin: 15px;
+	cursor: pointer;
+}
+.perfil-img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: center;
+	}
+}
+.perfil {
+	display: flex;
+	align-items: center;
+}
+.name-user {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	strong{
+		font-family: $font-family_3;
+	}
+	span {
+		color: $color_2;
+		font-family: $font-family_3;
+		font-size: 15px;
+	}
+}
+.caja-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.comentarios {
+	p {
+		color: $color_2;
+		font-family: $font-family_3;
+	}
+}
+
+/**************MEDIA Q TABLET**************/
+@media (max-width: 778px){
+	.reseñas {
+		font-size: 40px;
+		h2 {
+			font-size: 45px;
+		}
+	}
+	.dejar-comentario{
+		width: 700px;
+		margin-left: 130px;
+	.area-comentar {
+		margin: 30px 0px 0px 200px;
+		width: 900px;
+		height: 250px;
+		.escribir {
+			width: 750px;
+			height: 150px;
+		}
+		.img-escribir {
+			width: 80px;
+			height: 80px;
+		}
+	}
+	.boton {
+		width: 150px;
+		height: 45px;
+		font-size: 30px;
+		margin-left: 680px;
+		border-radius: 10px;
+	}
+}
+	.testimonios {
+		h1 {
+			font-size: 60px;
+			margin: 30px;
+			margin-right: 0px;
+			padding-right: 0%;
+			justify-content: left;
+			margin-left: 600px;
+			width: 100px;
+		}
+	}
+	.testimonios-caja {
+		width: 680px;
+		height: 300px;
+	}
+	.comentarios {
+		font-size: 25px;
+		p {
+			font-size: 30px;
+		}
+	}
+	.perfil-img {
+		height: 100px;
+		width: 100px;
+	}
+	.name-user {
+		font-size: 35px;
+	}
+	.estrellas {
+		img {
+			width: 35px;
+			height: 35px;
+		}
+	}
+	
+}
+
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 425px){
+	.reseñas {
+		h1 {
+			font-size: 100px;}
+		h2 {
+			font-size: 80px;
+		}
+	}
+.dejar-comentario {
+	padding: 30px 20px;
+	width: 1000px;
+	margin-left: 150px;
+	.area-comentar {
+		padding: 10px;
+		margin: 0%;
+		width: 1200px;
+		height: 400px;
+		.escribir {
+			height: 300px;
+			width: 1000px;
+		}
+		.img-escribir {
+			width: 150px;
+			height: 150px;
+		}
+	}
+	.boton {
+		margin-left: 950px;
+		width: 200px;
+		height: 80px;
+	}
+}
+
+.reseñas {
+	h2 {
+		margin: 10px;
+	}
+}
+.testimonios {
+	h1 {
+		margin-left: 500px;
+		margin-top: 70px;
+		width: 600px;
+		font-size: 100px;
+	}
+}
+.testimonios-contenedor{
+	display: flex;
+	flex-direction: column;
+}
+.testimonios-caja {
+	width: 1200px;
+	height: 470px;
+}
+.name-user {
+	strong{
+		font-size: 50px;
+	}
+	span {
+		font-size: 45px;
+	}
+}
+.perfil-img {
+	height: 180px;
+	width: 180px;
+}
+.estrellas {
+	img {
+		width: 70px;
+		height: 70px;
+	}
+}
+.comentarios {
+	p {
+		font-size: 50px;
+	}
+}
+}
