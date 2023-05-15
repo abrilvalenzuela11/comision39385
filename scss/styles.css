@@ -363,6 +363,15 @@
 .redes a {
   margin-left: 70px;
 }
+.redes a .img-face:hover {
+  transform: scale(115%);
+}
+.redes a .img-insta:hover {
+  transform: scale(115%);
+}
+.redes a .img-twitter:hover {
+  transform: scale(115%);
+}
 
 .grid-container {
   display: grid;
@@ -460,7 +469,7 @@
 /******************************************MEDIA Q TELEFONO 320***********************************************************/
 @media (max-width: 320px) {
   .footer {
-    width: 1270px;
+    width: 1280px;
   }
   .redes a {
     margin-left: 230px;
@@ -630,6 +639,7 @@
   .img-sucursal-dos {
     width: 360px;
     height: 400px;
+    position: relative;
   }
   .img-reseñas-dos {
     width: 360px;
@@ -697,13 +707,35 @@
   .carta-rese {
     flex-direction: column;
     margin-right: 40px;
+    margin-left: 30px;
   }
   .carta-suc {
     flex-direction: column;
     margin-right: 40px;
+    margin-left: 30px;
   }
 }
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 375px) {
+  .header-dos {
+    width: 1500px;
+  }
+  .inicio-suc {
+    margin-left: 30px;
+  }
+  .inicio-comp {
+    margin-left: 30px;
+  }
+  .carta-rese {
+    position: relative;
+    margin-left: 5px;
+  }
+}
+/******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 320px) {
+  .header-dos {
+    width: 1300px;
+  }
   .img-inicio {
     width: 590px;
     height: 600px;
@@ -726,15 +758,13 @@
   }
   .com-rese {
     position: relative;
-    right: 210px;
   }
   .carta-rese {
     position: relative;
-    right: 210px;
+    margin-left: 5px;
   }
   .carta-suc {
     position: relative;
-    right: 210px;
   }
 }
 .main-dos {
@@ -882,6 +912,7 @@
   .ca {
     margin-left: 40px;
     width: 1450px;
+    height: 750px;
   }
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
@@ -929,9 +960,45 @@
     height: 2000px;
   }
   .ca {
-    margin: 10px 10px 10px 15px;
+    margin: 10px 10px 10px 20px;
     width: 1500px;
+    height: 1050px;
+  }
+}
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 375px) {
+  .ca {
+    margin: 10px 10px 10px 15px;
+    width: 1470px;
+  }
+}
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 320px) {
+  .main-dos {
+    width: 1300px;
+  }
+  .nuestra-carta h1 {
+    font-size: 200px;
+    margin: 0%;
+  }
+  .bebidas {
+    margin-left: 150px;
+  }
+  .comida-dulce {
+    margin-left: 150px;
+  }
+  .comida-salada {
+    margin-left: 80px;
+    width: 1100px;
+    height: 2300px;
+  }
+  .com-s {
+    margin-left: 180px;
+  }
+  .ca {
+    width: 1270px;
     height: 1000px;
+    margin-left: 0%;
   }
 }
 .footer-dos {
@@ -942,44 +1009,46 @@
   color: white;
   width: 1540px;
 }
-
-.section-footer-dos {
+.footer-dos .section-footer-dos {
   display: flex;
   flex-direction: row;
 }
-
-.redes-dos {
+.footer-dos .section-footer-dos .redes-dos {
   left: 50px;
   bottom: 5px;
   color: rgb(255, 255, 255);
   font-size: 17px;
   padding: 15px 0px 10px 0px;
 }
-
-.redes-dos h2 {
+.footer-dos .section-footer-dos .redes-dos h2 {
   font-family: "Josefin Sans", sans-serif;
   width: 550px;
   margin-left: 40px;
   margin-bottom: 20px;
 }
-
-.redes-dos a {
+.footer-dos .section-footer-dos .redes-dos a {
   margin-left: 90px;
 }
-
-.contacto-dos {
+.footer-dos .section-footer-dos .redes-dos a .img-face-dos:hover {
+  transform: scale(115%);
+}
+.footer-dos .section-footer-dos .redes-dos a .img-insta-dos:hover {
+  transform: scale(115%);
+}
+.footer-dos .section-footer-dos .redes-dos a .img-twitter-dos:hover {
+  transform: scale(115%);
+}
+.footer-dos .section-footer-dos .contacto-dos {
   text-align: center;
   margin-left: 500px;
   padding: 15px 0px 10px 0px;
 }
-
-.contacto-dos h2 {
+.footer-dos .section-footer-dos .contacto-dos h2 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 30px;
   padding-bottom: 15px;
 }
-
-.contacto-dos h3 {
+.footer-dos .section-footer-dos .contacto-dos h3 {
   text-align: center;
   padding: 0px 10px 0px 0px;
   font-family: "Josefin Sans", sans-serif;
@@ -1001,42 +1070,42 @@
     margin-top: auto;
     justify-content: space-around;
   }
-  .section-footer-dos {
+  .footer-dos .section-footer-dos {
     display: flex;
     flex-direction: row;
   }
-  .redes-dos h2 {
+  .footer-dos .section-footer-dos .redes-dos h2 {
     font-size: 50px;
     text-align: center;
     margin-left: 0%;
   }
-  .redes-dos a {
+  .footer-dos .section-footer-dos .redes-dos a {
     margin-left: 80px;
   }
-  .img-face-dos {
+  .footer-dos .section-footer-dos .redes-dos a .img-face-dos {
     width: 100px;
     height: 100px;
     width: 70px;
   }
-  .img-insta-dos {
+  .footer-dos .section-footer-dos .redes-dos a .img-insta-dos {
     width: 100px;
     height: 100px;
     width: 70px;
   }
-  .img-twitter-dos {
+  .footer-dos .section-footer-dos .redes-dos a .img-twitter-dos {
     width: 100px;
     height: 100px;
     width: 70px;
   }
-  .contacto-dos {
+  .footer-dos .section-footer-dos .contacto-dos {
     font-size: 35px;
     margin-left: 60px;
   }
-  .contacto-dos h2 {
+  .footer-dos .section-footer-dos .contacto-dos h2 {
     font-size: 50px;
     margin-bottom: 30px;
   }
-  .contacto-dos h3 {
+  .footer-dos .section-footer-dos .contacto-dos h3 {
     font-size: 35px;
     text-align: center;
     padding: 15px 5px 5px 0px;
@@ -1056,36 +1125,36 @@
     grid-area: footer-dos;
     height: 600px;
   }
-  .section-footer-dos {
+  .footer-dos .section-footer-dos {
     display: flex;
     flex-direction: column;
     margin-left: 0%;
   }
-  .redes-dos {
+  .footer-dos .section-footer-dos .redes-dos {
     margin: 20px;
   }
-  .redes-dos h2 {
+  .footer-dos .section-footer-dos .redes-dos h2 {
     font-size: 60px;
     padding: 15px 5px 0px 5px;
     width: 1000px;
   }
-  .redes-dos a {
+  .footer-dos .section-footer-dos .redes-dos a {
     margin-left: 200px;
   }
-  .img-insta-dos {
+  .footer-dos .section-footer-dos .redes-dos a .img-insta-dos {
     width: 90px;
   }
-  .img-face-dos {
+  .footer-dos .section-footer-dos .redes-dos a .img-face-dos {
     width: 90px;
   }
-  .img-twitter-dos {
+  .footer-dos .section-footer-dos .redes-dos a .img-twitter-dos {
     width: 90px;
   }
-  .contacto-dos h2 {
+  .footer-dos .section-footer-dos .contacto-dos h2 {
     font-size: 60px;
     margin: 0px;
   }
-  .contacto-dos h3 {
+  .footer-dos .section-footer-dos .contacto-dos h3 {
     font-size: 50px;
     padding-left: 5px;
   }
@@ -1096,10 +1165,25 @@
     grid-template-columns: auto;
   }
 }
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 375px) {
+  .footer-dos {
+    width: 1500px;
+  }
+}
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 320px) {
+  .footer-dos {
+    width: 1300px;
+  }
+  .redes-dos {
+    margin-left: 20px;
+  }
+}
 .nuestros-cafes {
   text-align: center;
-  font-size: 40px;
-  font-family: "Bebas Neue", cursive;
+  font-size: 45px;
+  font-family: "Josefin Sans", sans-serif;
   margin-top: 30px;
 }
 
@@ -1108,8 +1192,8 @@
 }
 .nuestras-cafeteras h1 {
   text-align: center;
-  font-size: 40px;
-  font-family: "Bebas Neue", cursive;
+  font-size: 45px;
+  font-family: "Josefin Sans", sans-serif;
   margin-top: 60px;
 }
 
@@ -1162,36 +1246,90 @@
     margin-top: 0px;
   }
   .nuestras-cafeteras h1 {
+    font-size: 120px;
     padding: 0px;
+  }
+  .nuestros-cafes {
+    font-size: 120px;
   }
   .cafés {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+    padding: 50px;
+    gap: 50px;
     margin: 0px;
+    margin-left: 120px;
   }
   .cafeteras {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+    padding: 50px;
+    gap: 50px;
     margin-top: 0px;
+    margin-left: 120px;
   }
   .cafeteras-dos {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    gap: 20px;
+    gap: 50px;
     margin-top: 0px;
     margin-bottom: 0px;
+    margin-left: 150px;
   }
   .card {
-    width: 400px;
+    width: 1100px;
+    height: 1200px;
     margin-left: 70px;
   }
   .card a {
-    font-size: 20px;
+    font-size: 70px;
+  }
+  .card h2 {
+    font-size: 80px;
+  }
+  .card img {
+    width: 900px;
+    height: 1000px;
+  }
+}
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 320px) {
+  .main-dos {
+    width: 1300px;
+  }
+  .cafés {
+    margin-left: 0px;
+    width: 1000px;
+  }
+  .cafeteras {
+    margin-left: 0px;
+    width: 1000px;
+  }
+  .cafeteras-dos {
+    margin-left: 0px;
+    width: 1000px;
+  }
+  .nuestras-cafeteras h1 {
+    font-size: 100px;
+  }
+  .nuestros-cafes {
+    font-size: 100px;
+  }
+  .card {
+    width: 1000px;
+    height: 1200px;
+    margin-left: 120px;
+  }
+  .card a {
+    font-size: 60px;
+  }
+  .card h2 {
+    font-size: 60px;
+  }
+  .card img {
+    width: 700px;
+    height: 800px;
   }
 }
 .text-suc h1 {
@@ -1250,17 +1388,26 @@
 /******************MEDIA Q TABLET*************************/
 @media (max-width: 768px) {
   .text-suc h1 {
-    font-size: 40px;
+    font-size: 45px;
+    width: 1500px;
   }
   .sucursal-text {
-    font-size: 22px;
-    margin-left: 100px;
-    margin-top: 130px;
+    font-size: 27px;
+    margin-left: 140px;
+    margin-top: 240px;
+  }
+  .mapa- {
+    padding: 10px;
+    width: 750px;
+    height: 700px;
   }
 }
 /*********************MEDIA Q TELEFONO*****************************/
 @media (max-width: 425px) {
-  .main-dos h1 {
+  .text-suc h1 {
+    font-size: 60px;
+  }
+  .sucursal-text h1 {
     padding: 40px;
     font-size: 60px;
   }
@@ -1279,6 +1426,31 @@
   }
   .galery-container {
     padding: 10px;
+  }
+}
+/*********************MEDIA Q TELEFONO*****************************/
+@media (max-width: 375px) {
+  .main-dos {
+    width: 1500px;
+  }
+  .text-suc h1 {
+    width: 1500px;
+  }
+}
+/*********************MEDIA Q TELEFONO*****************************/
+@media (max-width: 320px) {
+  .text-suc h1 {
+    width: 1300px;
+  }
+  .mapa {
+    padding: 20px 15px 0px 10px;
+    width: 1200px;
+    height: 800px;
+  }
+  .mapa- {
+    width: 1200px;
+    height: 800px;
+    margin-left: 30px;
   }
 }
 .reseñas {
@@ -1513,6 +1685,7 @@
   .testimonios-caja {
     width: 1200px;
     height: 470px;
+    margin-bottom: 40px;
   }
   .name-user strong {
     font-size: 50px;
@@ -1530,5 +1703,28 @@
   }
   .comentarios p {
     font-size: 50px;
+  }
+}
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 320px) {
+  .reseñas h2 {
+    width: 1300px;
+  }
+  .dejar-comentario {
+    padding: 30px 20px;
+    width: 800px;
+    margin-left: 30px;
+  }
+  .testimonios h1 {
+    margin-left: 400px;
+  }
+  .testimonios-contenedor {
+    align-items: start;
+  }
+  .testimonios-caja {
+    width: 1240px;
+    height: 470px;
+    margin-bottom: 40px;
+    margin-left: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */

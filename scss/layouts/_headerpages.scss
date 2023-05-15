@@ -141,7 +141,7 @@
     .img-sucursal-dos {
         width: 360px;
         height: 400px;
-        
+        position: relative;
     }
     .img-reseñas-dos {
         width: 360px;
@@ -213,14 +213,35 @@
     .carta-rese {
         flex-direction: column;
         margin-right: 40px;
+        margin-left: 30px;
     }
     .carta-suc {
         flex-direction: column;
         margin-right: 40px;
+        margin-left: 30px;
     }
-
 }
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 375px) {
+    .header-dos{
+        width: 1500px;
+    }
+    .inicio-suc {
+        margin-left: 30px;
+    }
+    .inicio-comp {
+        margin-left: 30px;
+    }
+    .carta-rese{
+        position: relative;
+        margin-left: 5px;
+    }
+}
+/******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 320px) {
+    .header-dos{
+        width: 1300px;
+    }
     .img-inicio {
         width: 590px;
         height: 600px;
@@ -243,14 +264,12 @@
     }
     .com-rese{
         position: relative;
-        right: 210px;
     }
     .carta-rese{
         position: relative;
-        right: 210px;
+        margin-left: 5px;
     }
     .carta-suc{
         position: relative;
-        right: 210px;
     }
 }

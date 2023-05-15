@@ -1,14 +1,14 @@
 .nuestros-cafes {
 	text-align: center;
-	font-size: 40px;
-	font-family: $font-family_1;
+	font-size: 45px;
+	font-family: $font-family_2;
 	margin-top: 30px;
 }
 .nuestras-cafeteras {
 	h1 {
 		text-align: center;
-		font-size: 40px;
-		font-family: $font-family_1;
+		font-size: 45px;
+		font-family: $font-family_2;
 		margin-top: 60px;
 	}
 	margin-top: 40px;
@@ -58,36 +58,93 @@
 .nuestras-cafeteras {
 	margin-top: 0px;
 	h1 {
+		font-size: 120px;
 		padding: 0px;
 	}
+}
+.nuestros-cafes{
+		font-size: 120px;
 }
 .cafés {
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
-	gap: 20px;
+	padding: 50px;
+	gap: 50px;
 	margin: 0px;
+	margin-left: 120px;
 }
 .cafeteras {
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
-	gap: 20px;
+	padding: 50px;
+	gap: 50px;
 	margin-top: 0px;
+	margin-left: 120px;
 }
 .cafeteras-dos {
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
-	gap: 20px;
+	gap: 50px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	margin-left: 150px;
 }
 .card {
 	a {
-		font-size: 20px;
+		font-size: 70px;
 	}
-	width: 400px;
+	h2{
+		font-size: 80px;
+	}
+	width: 1100px;
+	height: 1200px;
 	margin-left: 70px;
+	img{
+		width: 900px;
+		height: 1000px;
+	}
 }
+}
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 320px) {
+	.main-dos{
+		width: 1300px;
+	}
+	.cafés {
+		margin-left:0px;
+		width: 1000px;
+	}
+	.cafeteras {
+		margin-left: 0px;
+		width: 1000px;
+	}
+	.cafeteras-dos {
+		margin-left: 0px;
+		width: 1000px;
+	}
+	.nuestras-cafeteras {
+		h1 {
+			font-size: 100px;
+		}
+	}
+	.nuestros-cafes{
+			font-size: 100px;
+	}
+
+	.card {
+		a {
+			font-size: 60px;
+		}
+		h2{
+			font-size: 60px;
+		}
+		width: 1000px;
+		height: 1200px;
+		margin-left: 120px;
+		img{
+			width: 700px;
+			height: 800px;
+		}
+	}
 }

@@ -26,8 +26,18 @@
 	margin-top: 20px;
 	a {
 		margin-left: 70px;
+        .img-face:hover{
+            transform: scale(115%);
+        }
+        .img-insta:hover{
+            transform: scale(115%);
+        }
+        .img-twitter:hover{
+            transform: scale(115%);
+        }
 	}
 }
+
 .grid-container {
 	display: grid;
 	grid-template-areas: "header header header" "main main main" "footer footer footer";
@@ -133,7 +143,7 @@
 /******************************************MEDIA Q TELEFONO 320***********************************************************/
 @media (max-width: 320px) {
     .footer {
-        width: 1270px;
+        width: 1280px;
     }
     .redes {
         a {

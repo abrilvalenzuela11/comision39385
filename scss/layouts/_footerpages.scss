@@ -5,44 +5,52 @@
     justify-content: space-around;
     color: white;
     width: 1540px;
-}
-.section-footer-dos{
-    display: flex;
-    flex-direction: row;
-}
-.redes-dos{
-    left: 50px;
-    bottom: 5px;
-    color: rgb(255, 255, 255);
-    font-size: 17px;
-    padding: 15px 0px 10px 0px;
-}
-
-.redes-dos h2{
-    font-family: 'Josefin Sans', sans-serif;
-    width: 550px;
-    margin-left: 40px;
-    margin-bottom: 20px;
-}
-.redes-dos a{
-    margin-left: 90px;
-}
-.contacto-dos{
-    text-align: center;
-    margin-left: 500px;
-    padding: 15px 0px 10px 0px;
-}
-.contacto-dos h2{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 30px;
-    padding-bottom: 15px;
-}
-.contacto-dos h3{
-    text-align: center;
-    padding: 0px 10px 0px 0px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
-    width: 450px;
+    .section-footer-dos{
+        display: flex;
+        flex-direction: row;
+        .redes-dos {
+            left: 50px;
+            bottom: 5px;
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+            padding: 15px 0px 10px 0px;
+            h2{
+            font-family: 'Josefin Sans', sans-serif;
+            width: 550px;
+            margin-left: 40px;
+            margin-bottom: 20px;
+            }
+            a{
+                margin-left: 90px;
+                .img-face-dos:hover{
+                    transform: scale(115%);
+                }
+                .img-insta-dos:hover{
+                    transform: scale(115%);
+                }
+                .img-twitter-dos:hover{
+                    transform: scale(115%);
+                }
+            }
+        }
+        .contacto-dos{
+            text-align: center;
+            margin-left: 500px;
+            padding: 15px 0px 10px 0px;
+            h2{
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 30px;
+                padding-bottom: 15px;
+            }
+            h3{
+                text-align: center;
+                padding: 0px 10px 0px 0px;
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 20px;
+                width: 450px;
+            }
+        }
+    }
 }
 .grid-container-dos{
     display: grid;
@@ -59,50 +67,50 @@
 	height: 300px;
 	margin-top: auto;
 	justify-content: space-around;
-}
-.section-footer-dos {
-	display: flex;
-	flex-direction: row;
-}
-.redes-dos {
-	h2 {
-		font-size: 50px;
-		text-align: center;
-        margin-left: 0%;
-	}
-	a {
-		margin-left: 80px;
-	}
-}
-.img-face-dos {
-	width: 100px;
-	height: 100px;
-	width: 70px;
-}
-.img-insta-dos {
-	width: 100px;
-	height: 100px;
-	width: 70px;
-}
-.img-twitter-dos {
-	width: 100px;
-	height: 100px;
-	width: 70px;
-}
-.contacto-dos {
-	font-size: 35px;
-    margin-left: 60px;
-	h2 {
-		font-size: 50px;
-		margin-bottom: 30px;
-	}
-	h3 {
-		font-size: 35px;
-		text-align: center;
-		padding: 15px 5px 5px 0px;
-		width: 100%;
-		margin-bottom: 0%;
-	}
+    .section-footer-dos {
+        display: flex;
+        flex-direction: row;
+        .redes-dos {
+            h2 {
+                font-size: 50px;
+                text-align: center;
+                margin-left: 0%;
+            }
+            a {
+                margin-left: 80px;
+                .img-face-dos {
+                    width: 100px;
+                    height: 100px;
+                    width: 70px;
+                }
+                .img-insta-dos {
+                    width: 100px;
+                    height: 100px;
+                    width: 70px;
+                }
+                .img-twitter-dos {
+                    width: 100px;
+                    height: 100px;
+                    width: 70px;
+                }
+            }
+        }
+        .contacto-dos {
+            font-size: 35px;
+            margin-left: 60px;
+            h2 {
+                font-size: 50px;
+                margin-bottom: 30px;
+            }
+            h3 {
+                font-size: 35px;
+                text-align: center;
+                padding: 15px 5px 5px 0px;
+                width: 100%;
+                margin-bottom: 0%;
+            }
+        }
+    }
 }
 .grid-container-dos {
 	display: grid;
@@ -116,39 +124,39 @@
     .footer-dos {
         grid-area: footer-dos;
         height: 600px;
-    }
-    .section-footer-dos {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0%;
-    }
-    .redes-dos {
-        margin: 20px;
-        h2 {
-            font-size: 60px;
-            padding: 15px 5px 0px 5px;
-            width: 1000px;
-        }
-        a {
-            margin-left: 200px;
-        }
-    }
-    .img-insta-dos {
-        width: 90px;
-    }
-    .img-face-dos {
-        width: 90px;
-    }
-    .img-twitter-dos {
-        width: 90px;
-    }
-    .contacto-dos {
-        h2{
-            font-size: 60px;
-            margin: 0px;}
-        h3 {
-            font-size: 50px;
-            padding-left: 5px;
+        .section-footer-dos {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0%;
+            .redes-dos {
+                margin: 20px;
+                h2 {
+                    font-size: 60px;
+                    padding: 15px 5px 0px 5px;
+                    width: 1000px;
+                }
+                a {
+                    margin-left: 200px;
+                    .img-insta-dos {
+                        width: 90px;
+                    }
+                    .img-face-dos {
+                        width: 90px;
+                    }
+                    .img-twitter-dos {
+                        width: 90px;
+                    }
+                }
+            }
+            .contacto-dos {
+                h2{
+                    font-size: 60px;
+                    margin: 0px;}
+                h3 {
+                    font-size: 50px;
+                    padding-left: 5px;
+                }
+            }
         }
     }
     .grid-container-dos {
@@ -158,4 +166,20 @@
         grid-template-columns: auto;
     }
     
+}
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 375px) {
+    .footer-dos{
+        width: 1500px;
+    }
+}
+    
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 320px) {
+    .footer-dos{
+        width: 1300px;
+    }
+    .redes-dos{
+        margin-left: 20px;
+    }
 }

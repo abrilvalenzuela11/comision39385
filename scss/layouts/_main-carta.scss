@@ -131,6 +131,7 @@
     .ca {
         margin-left: 40px;
         width: 1450px;
+        height: 750px;
     }
     
 }
@@ -179,9 +180,47 @@
         height: 2000px;
     }
     .ca {
-        margin: 10px 10px 10px 15px;
+        margin: 10px 10px 10px 20px;
         width: 1500px;
-        height: 1000px;
+        height: 1050px;
     }
     
+}
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 375px) {
+    .ca {
+        margin: 10px 10px 10px 15px;
+        width: 1470px;
+    }
+}
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 320px) {
+    .main-dos{
+        width: 1300px;
+    }
+    .nuestra-carta {
+        h1{
+            font-size: 200px;
+            margin: 0%;
+        }
+    }
+    .bebidas {
+        margin-left: 150px;
+    }
+    .comida-dulce {
+        margin-left: 150px;
+    }
+    .comida-salada {
+        margin-left: 80px;
+        width: 1100px;
+        height: 2300px;
+    }
+    .com-s {
+        margin-left: 180px;
+    }
+    .ca {
+        width: 1270px;
+        height: 1000px;
+        margin-left: 0%;
+    }
 }

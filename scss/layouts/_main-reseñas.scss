@@ -237,6 +237,7 @@
 .testimonios-caja {
 	width: 1200px;
 	height: 470px;
+	margin-bottom: 40px;
 }
 .name-user {
 	strong{
@@ -260,5 +261,32 @@
 	p {
 		font-size: 50px;
 	}
+}
+}
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 320px){
+.reseñas{
+	h2{
+		width: 1300px;
+	}
+}
+.dejar-comentario {
+	padding: 30px 20px;
+	width: 800px;
+	margin-left: 30px;
+}
+.testimonios {
+	h1 {
+		margin-left: 400px;
+	}
+}
+.testimonios-contenedor{
+	align-items: start;
+}
+.testimonios-caja {
+	width: 1240px;
+	height: 470px;
+	margin-bottom: 40px;
+	margin-left: 20px;
 }
 }
