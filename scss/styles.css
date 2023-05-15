@@ -640,6 +640,9 @@
     height: 400px;
     bottom: 70px;
   }
+  .header-dos .navbar {
+    flex-wrap: wrap;
+  }
   .header-dos .navbar .img-inicio {
     width: 700px;
     height: 600px;
@@ -743,6 +746,10 @@
   grid-area: main-dos;
   background-color: rgb(106, 174, 174);
   width: 1540px;
+}
+
+.contenedor {
+  flex-wrap: wrap;
 }
 
 .nuestra-carta {
