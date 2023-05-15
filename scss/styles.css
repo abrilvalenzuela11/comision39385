@@ -495,58 +495,40 @@
   align-content: end;
   width: 1540px;
 }
-
-.section-header-dos {
+.header-dos .section-header-dos {
   display: flex;
 }
-
-.img-logo- {
+.header-dos .section-header-dos .img-logo- {
   padding: 30px 5px 0px 0px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   width: 220px;
 }
-
-.coffee-dos h1 {
-  display: flex;
-  color: rgb(184, 231, 231);
-  font-size: 20px;
-  position: relative;
-  top: 100px;
-  right: 20px;
-  font-family: "Bebas Neue", cursive;
-}
-
-.navbar {
+.header-dos .navbar {
   display: flex;
   gap: 10px 20px;
   margin-left: 400px;
   align-items: center;
 }
-
-.inicio-suc {
+.header-dos .navbar .inicio-suc {
   display: flex;
   gap: 20px;
 }
-
-.inicio-comp {
+.header-dos .navbar .inicio-comp {
   display: flex;
   gap: 20px;
 }
-
-.com-rese {
+.header-dos .navbar .com-rese {
   display: flex;
   gap: 20px;
 }
-
-.carta-rese {
+.header-dos .navbar .carta-rese {
   display: flex;
   gap: 20px;
   margin-right: 20px;
 }
-
-.carta-suc {
+.header-dos .navbar .carta-suc {
   display: flex;
   gap: 20px;
 }
@@ -577,9 +559,6 @@
     height: 200px;
     padding-top: 30px;
   }
-  .coffee-dos h1 {
-    font-size: 20px;
-  }
   .navbar {
     margin-left: 400px;
   }
@@ -597,59 +576,54 @@
     justify-content: center;
     height: 200px;
   }
-  .img-logo- {
+  .header-dos section .img-logo- {
     width: 400px;
     height: 270px;
     padding-top: 5px;
     position: relative;
     bottom: 30px;
   }
-  .coffee-dos h1 {
-    font-size: 35px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-  .inicio-suc {
-    display: flex;
-    gap: 25px;
-  }
-  .com-rese {
-    display: flex;
-    gap: 25px;
-  }
-  .carta-rese {
-    display: flex;
-    gap: 25px;
-  }
-  .img-inicio {
-    width: 360px;
-    height: 400px;
-    margin-left: 15px;
-  }
-  .img-comprar-dos {
-    width: 360px;
-    height: 400px;
-    position: relative;
-  }
-  .img-carta-dos {
-    width: 360px;
-    height: 400px;
-    position: relative;
-  }
-  .img-sucursal-dos {
-    width: 360px;
-    height: 400px;
-    position: relative;
-  }
-  .img-reseñas-dos {
-    width: 360px;
-    height: 400px;
-  }
-  .navbar {
+  .header-dos .navbar {
     display: flex;
     margin-left: 5px;
     margin-right: 5px;
     align-items: center;
+  }
+  .header-dos .navbar .inicio-suc {
+    display: flex;
+    gap: 25px;
+  }
+  .header-dos .navbar .com-rese {
+    display: flex;
+    gap: 25px;
+  }
+  .header-dos .navbar .carta-rese {
+    display: flex;
+    gap: 25px;
+  }
+  .header-dos .navbar .img-inicio {
+    width: 360px;
+    height: 400px;
+    margin-left: 15px;
+  }
+  .header-dos .navbar .img-comprar-dos {
+    width: 360px;
+    height: 400px;
+    position: relative;
+  }
+  .header-dos .navbar .img-carta-dos {
+    width: 360px;
+    height: 400px;
+    position: relative;
+  }
+  .header-dos .navbar .img-sucursal-dos {
+    width: 360px;
+    height: 400px;
+    position: relative;
+  }
+  .header-dos .navbar .img-reseñas-dos {
+    width: 360px;
+    height: 400px;
   }
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
@@ -658,58 +632,55 @@
     grid-area: header-dos;
     height: 1500px;
   }
-  .header-dos section {
+  .header-dos .section-header-dos {
     height: 250px;
   }
-  .img-logo- {
+  .header-dos .section-header-dos .img-logo- {
     width: 400px;
     height: 400px;
     bottom: 70px;
   }
-  .coffee-dos h1 {
-    font-size: 30px;
-  }
-  .img-inicio {
+  .header-dos .navbar .img-inicio {
     width: 700px;
     height: 600px;
     position: relative;
     margin-left: 0%;
   }
-  .img-carta-dos {
+  .header-dos .navbar .img-carta-dos {
     width: 700px;
     height: 600px;
     position: relative;
   }
-  .img-comprar-dos {
+  .header-dos .navbar .img-comprar-dos {
     width: 700px;
     height: 600px;
   }
-  .img-sucursal-dos {
+  .header-dos .navbar .img-sucursal-dos {
     width: 700px;
     height: 600px;
   }
-  .img-reseñas-dos {
+  .header-dos .navbar .img-reseñas-dos {
     width: 700px;
     height: 600px;
   }
-  .inicio-suc {
+  .header-dos .navbar .inicio-suc {
     flex-direction: column;
     margin-left: 40px;
   }
-  .inicio-comp {
+  .header-dos .navbar .inicio-comp {
     flex-direction: column;
     margin-left: 40px;
   }
-  .com-rese {
+  .header-dos .navbar .com-rese {
     flex-direction: column;
     margin-right: 40px;
   }
-  .carta-rese {
+  .header-dos .navbar .carta-rese {
     flex-direction: column;
     margin-right: 40px;
     margin-left: 30px;
   }
-  .carta-suc {
+  .header-dos .navbar .carta-suc {
     flex-direction: column;
     margin-right: 40px;
     margin-left: 30px;
@@ -1278,6 +1249,7 @@
     margin-left: 150px;
   }
   .card {
+    border-radius: 60px;
     width: 1100px;
     height: 1200px;
     margin-left: 70px;
