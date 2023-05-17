@@ -76,7 +76,7 @@
         background-color: $background-color_1;
         height: 800px;
         flex-direction: column;
-        section {
+        .section-header-dos {
             display: flex;
             justify-content: center;
             height: 200px;
@@ -201,51 +201,76 @@
 @media (max-width: 375px) {
     .header-dos{
         width: 1500px;
-    }
-    .inicio-suc {
-        margin-left: 30px;
-    }
-    .inicio-comp {
-        margin-left: 30px;
-    }
-    .carta-rese{
-        position: relative;
-        margin-left: 5px;
+        .navbar{
+            .inicio-suc {
+                margin-left: 30px;
+            }
+            .inicio-comp {
+                margin-left: 30px;
+            }
+            .carta-rese{
+                position: relative;
+                margin-left: 5px;
+            }
+            .img-inicio {
+                width: 695px;
+                height: 600px;
+            }
+            .img-carta-dos {
+                width: 695px;
+                height: 600px;
+            }
+            .img-comprar-dos {
+                width: 695px;
+                height: 600px;
+            }
+            .img-sucursal-dos {
+                width: 695px;
+                height: 600px;
+            }
+            .img-reseñas-dos {
+                width: 695px;
+                height: 600px;
+            }
+        }
     }
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 320px) {
     .header-dos{
         width: 1300px;
+        .navbar{
+            .img-inicio {
+                width: 590px;
+                height: 600px;
+            }
+            .img-carta-dos {
+                width: 590px;
+                height: 600px;
+            }
+            .img-comprar-dos {
+                width: 590px;
+                height: 600px;
+            }
+            .img-sucursal-dos {
+                width: 590px;
+                height: 600px;
+            }
+            .img-reseñas-dos {
+                width: 590px;
+                height: 600px;
+            }
+            .com-rese{
+                position: relative;
+            }
+            .carta-rese{
+                position: relative;
+                margin-left: 5px;
+            }
+            .carta-suc{
+                position: relative;
+            }
+        }
     }
-    .img-inicio {
-        width: 590px;
-        height: 600px;
-    }
-    .img-carta-dos {
-        width: 590px;
-        height: 600px;
-    }
-    .img-comprar-dos {
-        width: 590px;
-        height: 600px;
-    }
-    .img-sucursal-dos {
-        width: 590px;
-        height: 600px;
-    }
-    .img-reseñas-dos {
-        width: 590px;
-        height: 600px;
-    }
-    .com-rese{
-        position: relative;
-    }
-    .carta-rese{
-        position: relative;
-        margin-left: 5px;
-    }
-    .carta-suc{
-        position: relative;
-    }
+
 }

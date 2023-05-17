@@ -123,6 +123,10 @@
   transform: scale(103%);
 }
 
+.vlz {
+  width: 370px;
+}
+
 .carta-sucursal {
   display: flex;
 }
@@ -570,12 +574,12 @@
     height: 800px;
     flex-direction: column;
   }
-  .header-dos section {
+  .header-dos .section-header-dos {
     display: flex;
     justify-content: center;
     height: 200px;
   }
-  .header-dos section .img-logo- {
+  .header-dos .section-header-dos .img-logo- {
     width: 400px;
     height: 270px;
     padding-top: 5px;
@@ -693,15 +697,35 @@
   .header-dos {
     width: 1500px;
   }
-  .inicio-suc {
+  .header-dos .navbar .inicio-suc {
     margin-left: 30px;
   }
-  .inicio-comp {
+  .header-dos .navbar .inicio-comp {
     margin-left: 30px;
   }
-  .carta-rese {
+  .header-dos .navbar .carta-rese {
     position: relative;
     margin-left: 5px;
+  }
+  .header-dos .navbar .img-inicio {
+    width: 695px;
+    height: 600px;
+  }
+  .header-dos .navbar .img-carta-dos {
+    width: 695px;
+    height: 600px;
+  }
+  .header-dos .navbar .img-comprar-dos {
+    width: 695px;
+    height: 600px;
+  }
+  .header-dos .navbar .img-sucursal-dos {
+    width: 695px;
+    height: 600px;
+  }
+  .header-dos .navbar .img-reseñas-dos {
+    width: 695px;
+    height: 600px;
   }
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
@@ -709,34 +733,34 @@
   .header-dos {
     width: 1300px;
   }
-  .img-inicio {
+  .header-dos .navbar .img-inicio {
     width: 590px;
     height: 600px;
   }
-  .img-carta-dos {
+  .header-dos .navbar .img-carta-dos {
     width: 590px;
     height: 600px;
   }
-  .img-comprar-dos {
+  .header-dos .navbar .img-comprar-dos {
     width: 590px;
     height: 600px;
   }
-  .img-sucursal-dos {
+  .header-dos .navbar .img-sucursal-dos {
     width: 590px;
     height: 600px;
   }
-  .img-reseñas-dos {
+  .header-dos .navbar .img-reseñas-dos {
     width: 590px;
     height: 600px;
   }
-  .com-rese {
+  .header-dos .navbar .com-rese {
     position: relative;
   }
-  .carta-rese {
+  .header-dos .navbar .carta-rese {
     position: relative;
     margin-left: 5px;
   }
-  .carta-suc {
+  .header-dos .navbar .carta-suc {
     position: relative;
   }
 }
