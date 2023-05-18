@@ -114,7 +114,7 @@
 }
 
 .vlz {
-  width: 355px;
+  width: 340px;
 }
 
 .carta-sucursal {
@@ -193,7 +193,6 @@
   .comprar {
     width: 175px;
     height: 200px;
-    margin-left: 10px;
   }
   .carta-sucursal {
     display: flex;
@@ -206,7 +205,6 @@
   .sucursal {
     width: 175px;
     height: 200px;
-    margin-left: 10px;
   }
   .imagen-principal h2 {
     font-size: 3rem;
@@ -273,11 +271,11 @@
 }
 @media (max-width: 425px) and (max-width: 375px) {
   .reseñas-comprar .reseña-img {
-    width: 170px;
+    width: 160px;
     height: 170px;
   }
   .reseñas-comprar .comprar {
-    width: 170px;
+    width: 160px;
     height: 170px;
   }
   .carta-sucursal {
@@ -285,11 +283,11 @@
     flex-direction: column;
   }
   .carta-sucursal .carta-img {
-    width: 170px;
+    width: 160px;
     height: 170px;
   }
   .carta-sucursal .sucursal {
-    width: 170px;
+    width: 160px;
     height: 170px;
   }
   .vlz {
@@ -305,11 +303,11 @@
 }
 @media (max-width: 425px) and (max-width: 320px) {
   .reseñas-comprar .reseña-img {
-    width: 145px;
+    width: 135px;
     height: 150px;
   }
   .reseñas-comprar .comprar {
-    width: 145px;
+    width: 135px;
     height: 150px;
   }
   .carta-sucursal {
@@ -317,15 +315,15 @@
     flex-direction: column;
   }
   .carta-sucursal .carta-img {
-    width: 145px;
+    width: 135px;
     height: 150px;
   }
   .carta-sucursal .sucursal {
-    width: 145px;
+    width: 135px;
     height: 150px;
   }
   .vlz {
-    left: 100px;
+    left: 80px;
   }
 }
 @media (max-width: 425px) {
@@ -351,7 +349,7 @@
 
 .contacto {
   text-align: center;
-  margin-left: 500px;
+  margin-left: 300px;
   font-size: 20px;
   font-family: "Josefin Sans", sans-serif;
   margin-top: 20px;
@@ -365,6 +363,7 @@
   font-size: 20px;
   font-family: "Josefin Sans", sans-serif;
   margin-top: 20px;
+  margin-left: 40px;
 }
 .redes a {
   margin-left: 70px;
@@ -377,6 +376,9 @@
 }
 .redes a .img-twitter:hover {
   transform: scale(115%);
+}
+.redes h2 {
+  width: 500px;
 }
 
 .grid-container {
@@ -473,24 +475,39 @@
   }
 }
 /******************************************MEDIA Q TELEFONO 375***********************************************************/
+@media (max-width: 375px) {
+  .redes h2 {
+    margin-right: 80px;
+    width: 300px;
+  }
+  .contacto h3 {
+    width: 300px;
+    margin-left: 70px;
+  }
+}
 /******************************************MEDIA Q TELEFONO 320***********************************************************/
 @media (max-width: 320px) {
+  .redes {
+    margin-left: 5px;
+  }
   .redes a {
-    margin-left: 50px;
+    margin-left: 55px;
   }
   .redes h2 {
     font-size: 20px;
-    margin-right: 0%;
-    margin-left: 15px;
+    margin-right: 50px;
+    width: 250px;
   }
   .contacto {
-    margin-top: 50px;
+    margin-top: 40px;
+    width: 300px;
   }
   .contacto h2 {
     font-size: 20px;
   }
   .contacto h3 {
     font-size: 20px;
+    margin-left: 10px;
   }
 }
 .header-dos {

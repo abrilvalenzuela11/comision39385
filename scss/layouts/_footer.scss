@@ -11,7 +11,7 @@
 }
 .contacto {
 	text-align: center;
-	margin-left: 500px;
+	margin-left: 300px;
 	font-size: 20px;
 	font-family: $font-family_2;
 	margin-top: 20px;
@@ -24,6 +24,7 @@
 	font-size: 20px;
 	font-family: $font-family_2;
 	margin-top: 20px;
+    margin-left: 40px;
 	a {
 		margin-left: 70px;
         .img-face:hover{
@@ -36,6 +37,9 @@
             transform: scale(115%);
         }
 	}
+    h2{
+        width: 500px;
+    }
 }
 
 .grid-container {
@@ -142,28 +146,42 @@
 
 /******************************************MEDIA Q TELEFONO 375***********************************************************/
 @media (max-width: 375px) {
-
+    .redes {
+        h2 {
+            margin-right: 80px;
+            width: 300px;
+        }
+    }
+    .contacto{
+        h3{
+            width: 300px;
+            margin-left: 70px;
+        }
+    }
 }
 /******************************************MEDIA Q TELEFONO 320***********************************************************/
 @media (max-width: 320px) {
 
     .redes {
+        margin-left: 5px;
         a {
-            margin-left: 50px;
+            margin-left: 55px;
         }
         h2 {
             font-size: 20px;
-            margin-right: 0%;
-            margin-left: 15px;
+            margin-right: 50px;
+            width: 250px;
         }
     }
     .contacto{
-        margin-top: 50px;
+        margin-top: 40px;
+        width: 300px;
         h2{
             font-size: 20px;
         }
         h3{
             font-size: 20px;
+            margin-left: 10px;
         }
     }
 }

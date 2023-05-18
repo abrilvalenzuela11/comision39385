@@ -21,7 +21,7 @@
     transform: scale(103%);
 }
 .vlz{
-    width: 355px;
+    width: 340px;
 }
 .carta-sucursal {
 	display: flex;
@@ -99,7 +99,6 @@
     .comprar {
         width: 175px;
         height: 200px;
-        margin-left: 10px;
     }
     .carta-sucursal {
         display: flex;
@@ -113,7 +112,6 @@
     .sucursal {
         width: 175px;
         height: 200px;
-        margin-left: 10px;
     }
 
     .imagen-principal {
@@ -188,11 +186,11 @@
 @media (max-width: 375px) {
     .reseñas-comprar {
         .reseña-img{
-            width: 170px;
+            width: 160px;
             height: 170px;
         }
         .comprar{
-            width: 170px;
+            width: 160px;
             height: 170px;
         }
     }
@@ -200,11 +198,11 @@
         display: flex;
         flex-direction: column;
         .carta-img{
-            width: 170px;
+            width: 160px;
             height: 170px;
         }
         .sucursal{
-            width: 170px;
+            width: 160px;
             height: 170px;
         }
     }
@@ -225,11 +223,11 @@
 @media (max-width: 320px) {
     .reseñas-comprar {
         .reseña-img{
-            width: 145px;
+            width: 135px;
             height: 150px;
         }
         .comprar{
-            width: 145px;
+            width: 135px;
             height: 150px;
         }
     }
@@ -237,17 +235,17 @@
         display: flex;
         flex-direction: column;
         .carta-img{
-            width: 145px;
+            width: 135px;
             height: 150px;
         }
         .sucursal{
-            width: 145px;
+            width: 135px;
             height: 150px;
 
         }
     }
     .vlz {
-        left: 100px;
+        left: 80px;
     }
     }
     .imagen-principal{
