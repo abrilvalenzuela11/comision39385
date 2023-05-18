@@ -59,6 +59,7 @@
     "main-dos main-dos main-dos"
     "footer-dos footer-dos footer-dos";
     grid-template-rows: 210px 1fr 150px;
+    grid-template-columns: repeat(3, 1fr);
 }
 /******************************************MEDIA Q TABLET***********************************************************/
 @media (max-width: 778px){

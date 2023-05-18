@@ -21,7 +21,7 @@
     transform: scale(103%);
 }
 .vlz{
-    width: 370px;
+    width: 355px;
 }
 .carta-sucursal {
 	display: flex;
@@ -36,6 +36,10 @@
 	padding: 0px 5px 0px 8px;
 	position: relative;
 	display: inline-block;
+    .img-principal {
+        z-index: -1;
+        width: 100%;
+    }
 	h2 {
 		position: absolute;
 		top: 80%;
@@ -45,55 +49,82 @@
 		font-size: 4rem;
 		text-align: center;
 		font-family: $font-family_2;
+        width: 900px;
 	}
 }
-
-.img-principal {
-	z-index: -1;
+/******************************************MEDIA Q PORTATIL***********************************************************/
+@media (max-width: 1024px){
+        .reseña-img{
+            width:200px ;
+        }
+        .carta-img{
+            width:200px ;
+        }
+        .comprar{
+            width:200px ;
+        }
+        .sucursal{
+            width:200px ;
+        }
+    
+    .vlz{
+        width: 180px;
+        position: relative;
+        top: 30px;
+    }
+    .imagen-principal{
+        h2{
+            font-size: 50px;
+        }
+    }
 }
-
 /******************************************MEDIA Q TABLET***********************************************************/
 @media (max-width: 778px){
     .reseñas-comprar {
-        padding-top: 200px;
         display: flex;
+        margin-top: 100px;
     }
     .vlz {
         position: absolute;
-        left: 800px;
-        clip-path: inset(30px 10px 90px 10px);
+        width: 200px;
+        height: 200px;
+        left: 280px;
+        clip-path: inset(60px 10px 50px 10px);
+        top: 50px;
     }
     .reseña-img {
-        width: 480px;
-        height: 490px;
+        width: 175px;
+        height: 200px;
     }
     .comprar {
-        width: 480px;
-        height: 490px;
+        width: 175px;
+        height: 200px;
         margin-left: 10px;
     }
     .carta-sucursal {
-        padding-top: 200px;
         display: flex;
+        margin-top: 100px;
     }
     .carta-img {
-        width: 480px;
-        height: 490px;
+        width: 175px;
+        height: 200px;
+        
     }
     .sucursal {
-        width: 480px;
-        height: 490px;
+        width: 175px;
+        height: 200px;
         margin-left: 10px;
     }
-    .img-principal {
-        width: 100%;
-        height: 1400px;
-        padding: 20px 0px 0px;
-    }
+
     .imagen-principal {
         h2 {
-            font-size: 6rem;
-            width: 1500px;
+            font-size: 3rem;
+            width: 600px;
+        }
+        .img-principal {
+            width: 100%;
+            height: 550px;
+            padding: 5px 0px 0px;
         }
     }
 }
@@ -108,49 +139,47 @@
 .reseñas-comprar {
 	display: flex;
 	flex-direction: column;
-    padding-top: 400px;
+    margin-top: 60px;
     .reseña-img{
-        width: 830px;
-        height: 700px;
+        width: 200px;
+        height: 200px;
     }
     .comprar{
-        width: 830px;
-        height: 700px;
+        width: 200px;
+        height: 200px;
     }
 }
 .carta-sucursal {
 	display: flex;
 	flex-direction: column;
-    padding-top: 400px;
+    margin-top: 60px;
     .carta-img{
-        width: 830px;
-        height: 700px;
-        margin-left: 10px;
+        width: 200px;
+        height: 200px;
+        
     }
     .sucursal{
-        width: 830px;
-        height: 700px;
-        margin-left: 10px;
+        width: 200px;
+        height: 200px;
+        
     }
 }
 .sucursal {
 	margin: 0%;
 }
 .vlz {
-	left: 600px;
-	clip-path: inset(30px 10px 90px 10px);
-    width: 500px;
-    height: 400px;
+	left: 150px;
+	clip-path: inset(50px 0px 50px 0px);
+    width: 150px;
+    height: 150px;
 }
 .img-principal {
-	height: 1500px;
 	padding: 10px 0px 0px;
-    width: 1680px;
 }
 .imagen-principal{
     h2 {
-		font-size: 7rem;
-		width: 1600px;
+		font-size: 2rem;
+		width: 400px;
 	}
 }
 
@@ -159,41 +188,36 @@
 @media (max-width: 375px) {
     .reseñas-comprar {
         .reseña-img{
-            width: 720px;
-            height: 700px;
-            margin-left: 10px;
+            width: 170px;
+            height: 170px;
         }
         .comprar{
-            width: 720px;
-            height: 700px;
-            margin-left: 10px;
+            width: 170px;
+            height: 170px;
         }
     }
     .carta-sucursal {
         display: flex;
         flex-direction: column;
-        padding-top: 400px;
         .carta-img{
-            width: 720px;
-            height: 700px;
-            margin-left: 20px;
+            width: 170px;
+            height: 170px;
         }
         .sucursal{
-            width: 720px;
-            height: 700px;
-            margin-left: 20px;
+            width: 170px;
+            height: 170px;
         }
     }
     .vlz {
-        left: 550px;
+        left: 120px;
     }
     .img-principal {
         width: 1490px;
     }
     .imagen-principal{
         h2 {
-            font-size: 7rem;
-            width: 1500px;
+            font-size: 2rem;
+            width: 365px;
         }
     }
 }
@@ -201,43 +225,38 @@
 @media (max-width: 320px) {
     .reseñas-comprar {
         .reseña-img{
-            width: 610px;
-            height: 600px;
-            margin-left: 10px;
+            width: 145px;
+            height: 150px;
         }
         .comprar{
-            width: 610px;
-            height: 600px;
-            margin-left: 10px;
+            width: 145px;
+            height: 150px;
         }
     }
     .carta-sucursal {
         display: flex;
         flex-direction: column;
-        padding-top: 400px;
         .carta-img{
-            width: 610px;
-            height: 600px;
-            margin-left: 10px;
+            width: 145px;
+            height: 150px;
         }
         .sucursal{
-            width: 610px;
-            height: 600px;
-            margin-left: 10px;
+            width: 145px;
+            height: 150px;
+
         }
     }
     .vlz {
-        left: 400px;
+        left: 100px;
     }
-    .img-principal {
-        height: 1400px;
-        padding: 10px 0px 0px;
-        width: 1260px;
     }
     .imagen-principal{
         h2 {
-            font-size: 7rem;
-            width: 1270px;
+            font-size: 2rem;
+            width: 300px;
+        }
+        .img-principal{
+            height: 400px;
         }
     }
-}}
+}
