@@ -50,6 +50,9 @@
 }
 /******************************************MEDIA Q PORTATIL***********************************************************/
 @media (max-width: 1024px){
+    .footer{
+        height: 180px;
+    }
     .contacto{
         margin-left: 50px;
     }
@@ -112,8 +115,9 @@
 	flex-direction: column;
 }
 .redes {
+    margin-right: 40px;
 	a {
-		margin-left: 70px;
+		margin-left: 60px;
 	}
 	h2 {
 		display: flex;
@@ -123,6 +127,7 @@
 	}
 }
 .contacto{
+    margin-right: 30px;
     h2{
         font-size: 30px;
     }
@@ -147,6 +152,9 @@
 /******************************************MEDIA Q TELEFONO 375***********************************************************/
 @media (max-width: 375px) {
     .redes {
+        a{
+            margin-left: 80px;
+        }
         h2 {
             margin-right: 80px;
             width: 300px;
@@ -165,7 +173,7 @@
     .redes {
         margin-left: 5px;
         a {
-            margin-left: 55px;
+            margin-left: 60px;
         }
         h2 {
             font-size: 20px;
@@ -176,6 +184,7 @@
     .contacto{
         margin-top: 40px;
         width: 300px;
+        margin-right: 10px;
         h2{
             font-size: 20px;
         }
