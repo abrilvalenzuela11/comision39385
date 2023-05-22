@@ -4,24 +4,22 @@
     display: flex;
     justify-content: space-around;
     color: white;
-    width: 1540px;
     .section-footer-dos{
         display: flex;
         flex-direction: row;
         .redes-dos {
-            left: 50px;
             bottom: 5px;
             color: rgb(255, 255, 255);
             font-size: 17px;
             padding: 15px 0px 10px 0px;
+            margin-right: 230px;
             h2{
             font-family: 'Josefin Sans', sans-serif;
-            width: 550px;
-            margin-left: 40px;
+            width: 400px;
             margin-bottom: 20px;
             }
             a{
-                margin-left: 90px;
+                margin-left: 50px;
                 .img-face-dos:hover{
                     transform: scale(115%);
                 }
@@ -35,8 +33,8 @@
         }
         .contacto-dos{
             text-align: center;
-            margin-left: 500px;
             padding: 15px 0px 10px 0px;
+            margin-right: 100px;
             h2{
                 font-family: 'Josefin Sans', sans-serif;
                 font-size: 30px;
@@ -61,54 +59,72 @@
     grid-template-rows: 210px 1fr 150px;
     grid-template-columns: repeat(3, 1fr);
 }
+
+/******************************************MEGA Q PORTATIL**********************************************************/
+@media (max-width: 1024px){
+    .footer-dos{
+        .section-footer-dos{
+            .contacto-dos{
+                margin-right: 30px;
+            }
+            .redes-dos{
+                margin-right: 0px;
+                margin-left: 70px;
+                h2{
+                    width: 470px;
+                }
+            }
+        }
+    }
+}
 /******************************************MEDIA Q TABLET***********************************************************/
 @media (max-width: 778px){
 .footer-dos {
 	grid-area: footer-dos;
-	height: 300px;
+	height: 220px;
 	margin-top: auto;
 	justify-content: space-around;
     .section-footer-dos {
         display: flex;
         flex-direction: row;
         .redes-dos {
+            margin-left: 0px;
+
             h2 {
-                font-size: 50px;
+                font-size: 25px;
                 text-align: center;
                 margin-left: 0%;
+                width: 320px;
             }
             a {
-                margin-left: 80px;
+                margin-left: 50px;
                 .img-face-dos {
-                    width: 100px;
+                    width: 40px;
                     height: 100px;
-                    width: 70px;
                 }
                 .img-insta-dos {
-                    width: 100px;
+                    width: 40px;
                     height: 100px;
-                    width: 70px;
                 }
                 .img-twitter-dos {
-                    width: 100px;
+                    width: 40px;
                     height: 100px;
-                    width: 70px;
                 }
             }
         }
         .contacto-dos {
-            font-size: 35px;
-            margin-left: 60px;
+            font-size: 25px;
+            margin-left: 0px;
+            margin-right: 0px;
             h2 {
-                font-size: 50px;
-                margin-bottom: 30px;
+                font-size: 25px;
             }
             h3 {
-                font-size: 35px;
+                font-size: 20px;
                 text-align: center;
                 padding: 15px 5px 5px 0px;
-                width: 100%;
                 margin-bottom: 0%;
+                width: 350px;
             }
         }
     }
@@ -116,7 +132,7 @@
 .grid-container-dos {
 	display: grid;
 	grid-template-areas: "header-dos header-dos header-dos" "main-dos main-dos main-dos" "footer-dos footer-dos footer-dos";
-	grid-template-rows: 620px 1fr 300px;
+	grid-template-rows: 365px 1fr 220px;
 	grid-template-columns: auto;
 }
 }
@@ -124,63 +140,139 @@
 @media (max-width: 425px) {
     .footer-dos {
         grid-area: footer-dos;
-        height: 600px;
+        height: 400px;
         .section-footer-dos {
             display: flex;
             flex-direction: column;
             margin-left: 0%;
             .redes-dos {
-                margin: 20px;
+                margin: 10px;
                 h2 {
-                    font-size: 60px;
-                    padding: 15px 5px 0px 5px;
-                    width: 1000px;
+                    font-size: 25px;
+                    padding: 15px 5px 0px 0px;
+                    width: 400px;
                 }
                 a {
-                    margin-left: 200px;
+                    margin-left: 70px;
                     .img-insta-dos {
-                        width: 90px;
+                        width: 40px;
+                        height: 50px;
                     }
                     .img-face-dos {
-                        width: 90px;
+                        width: 40px;
+                        height: 50px;
                     }
                     .img-twitter-dos {
-                        width: 90px;
+                        width: 40px;
+                        height: 50px;
                     }
                 }
             }
             .contacto-dos {
                 h2{
-                    font-size: 60px;
+                    font-size: 25px;
                     margin: 0px;}
                 h3 {
-                    font-size: 50px;
+                    font-size: 20px;
                     padding-left: 5px;
+                    width: 380px;
+                    margin-left: 25px;
                 }
             }
         }
     }
     .grid-container-dos {
         display: grid;
-        grid-template-areas: "header-dos header-dos header-dos" "main-dos main-dos main-dos" "footer-dos footer-dos footer-dos";
-        grid-template-rows: 1500px 1fr 600px;
+        grid-template-areas: "header-dos" "main-dos" "footer-dos";
+        grid-template-rows: 550px 1fr 400px;
         grid-template-columns: auto;
     }
     
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 375px) {
-    .footer-dos{
-        width: 1500px;
+    .footer-dos {
+        grid-area: footer-dos;
+        height: 320px;
+        .section-footer-dos{
+        .redes-dos{
+            a {
+                margin-left: 63px;
+                .img-insta-dos {
+                    width: 30px;
+                    height: 40px;
+                }
+                .img-face-dos {
+                    width: 30px;
+                    height: 40px;
+                }
+                .img-twitter-dos {
+                    width: 30px;
+                    height: 40px;
+                }
+            }
+            h2{
+                font-size: 20px;
+                width: 300px;
+                margin-left: 30px;
+            }
+        }
+        .contacto-dos{
+                h2{
+                    font-size: 20px;
+                    
+                }
+                h3{
+                    font-size: 15px;
+                    width: 360px;
+                    margin-left: 0%;
+                }
+        }
+    }
+    }
+
+
+    .grid-container-dos {
+        display: grid;
+        grid-template-areas: "header-dos" "main-dos" "footer-dos";
+        grid-template-rows: 490px 1fr 320px;
+        grid-template-columns: auto;
     }
 }
     
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 320px) {
     .footer-dos{
-        width: 1300px;
+        grid-area: footer-dos;
+        height: 320px;
+    .section-footer-dos{
+        .redes-dos{
+            position: relative;
+            right: 35px;
+            width: 290px;
+            margin-left: 30px;
+            h2{
+                width: 250px;
+            }
+            a{
+                margin-left: 50px;
+            }
+    
+        }
+        .contacto-dos{
+            position: relative;
+            right: 30px;
+            h3{
+            width: 360px;
+            }
+        }
     }
-    .redes-dos{
-        margin-left: 20px;
+}
+
+    .grid-container-dos {
+        display: grid;
+        grid-template-areas: "header-dos" "main-dos" "footer-dos";
+        grid-template-rows: 450px 1fr 320px;
+        grid-template-columns: auto;
     }
 }

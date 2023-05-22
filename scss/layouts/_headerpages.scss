@@ -4,7 +4,6 @@
 	display: flex;
 	flex-direction: row;
 	align-content: end;
-    width: 1540px;
     .section-header-dos {
         display: flex;
         .img-logo- {
@@ -18,7 +17,7 @@
         .navbar {
             display: flex;
             gap: 10px 20px;
-            margin-left: 400px;
+            margin-left: 290px;
             align-items: center;
             .inicio-suc {
                 display: flex;
@@ -59,33 +58,49 @@
     transform: scale(103%);
 }
 
-/***********MEGA Q PORTATIL***********/
+/******************************************MEGA Q PORTATIL**********************************************************/
 @media (max-width: 1024px){
-    .img-logo-{
-        height: 200px;
-        padding-top: 30px;
+    .header-dos{
+        .section-header-dos{
+            .img-logo-{
+                width: 120px;
+                height: 150px;
+                padding-top: 50px;
+            }
+        }
+        .navbar {
+        margin-left: 10px;
+        gap: 10px;
+        .inicio-suc{
+            gap: 10px;
+        }
+        .com-rese{
+            gap: 10px;
+        }
+        .carta-rese{
+            gap: 10px;
+        }
     }
-    .navbar {
-        margin-left: 400px;
-    }
+}
 }
 /******************************************MEDIA Q TABLET***********************************************************/
 @media (max-width: 778px){
     .header-dos {
         grid-area: header-dos;
         background-color: $background-color_1;
-        height: 800px;
+        height: 365px;
         flex-direction: column;
         .section-header-dos {
             display: flex;
             justify-content: center;
-            height: 200px;
+            height: 150px;
             .img-logo- {
-                width: 400px;
-                height: 270px;
-                padding-top: 5px;
-                position: relative;
-                bottom: 30px;
+                    position: absolute;
+                    width: 200px;
+                    height: 190px;
+                    left: 280px;
+                    clip-path: inset(60px 10px 50px 10px);
+                    padding-top: 0px;
             }
         }
         .navbar {
@@ -95,40 +110,40 @@
             align-items: center;
             .inicio-suc {
                 display: flex;
-                gap: 25px;
+                gap: 10px;
             }
             .com-rese {
                 display: flex;
-                gap: 25px;
+                gap: 10px;
             }
             .carta-rese {
                 display: flex;
-                gap: 25px;
+                gap: 10px;
             }
             .img-inicio {
-                width: 360px;
-                height: 400px;
-                margin-left: 15px;
+                width: 177px;
+        height: 200px;
+                margin-left: 2px;
             }
             .img-comprar-dos {
-                width: 360px;
-                height: 400px;
+                width: 177px;
+        height: 200px;
                 position: relative;
                 
             }
             .img-carta-dos {
-                width: 360px;
-                height: 400px;
+                width: 177px;
+        height: 200px;
                 position: relative;
             }
             .img-sucursal-dos {
-                width: 360px;
-                height: 400px;
+                width: 177px;
+        height: 200px;
                 position: relative;
             }
             .img-reseñas-dos {
-                width: 360px;
-                height: 400px;
+                width: 177px;
+        height: 200px;
                 
             }
         }
@@ -138,61 +153,62 @@
 @media (max-width: 425px) {
     .header-dos {
         grid-area: header-dos;
-        height: 1500px;
+        height: 550px;
         .section-header-dos {
-            height: 250px;
+            height: 120px;
             .img-logo- {
-                width: 400px;
-                height: 400px;
-                bottom: 70px;
+                width: 150px;
+                height: 150px;
+                left: 150px;
+                clip-path: inset(20px 10px 50px 10px);
             }
         }
         .navbar{
             flex-wrap: wrap;
         .img-inicio {
-            width: 700px;
-            height: 600px;
+            width: 190px;
+        height: 200px;
             position: relative;
             margin-left: 0%;
         }
         .img-carta-dos {
-            width: 700px;
-            height: 600px;
+            width: 190px;
+        height: 200px;
             position: relative;
         }
         .img-comprar-dos {
-            width: 700px;
-            height: 600px;
+            width: 190px;
+        height: 200px;
         }
         .img-sucursal-dos {
-            width: 700px;
-            height: 600px;
+            width: 190px;
+        height: 200px;
         }
         .img-reseñas-dos {
-            width: 700px;
-            height: 600px;
+            width: 190px;
+        height: 200px;
         }
         .inicio-suc {
             flex-direction: column;
-            margin-left: 40px;
+            margin-left: 2px;
         }
         .inicio-comp {
             flex-direction: column;
-            margin-left: 40px;
+            margin-left: 2px;
         }
         .com-rese {
             flex-direction: column;
-            margin-right: 40px;
+            margin-right: 10px;
         }
         .carta-rese {
             flex-direction: column;
-            margin-right: 40px;
-            margin-left: 30px;
+            margin-right: 10px;
+            margin-left: 5px;
         }
         .carta-suc {
             flex-direction: column;
-            margin-right: 40px;
-            margin-left: 30px;
+            margin-right: 10px;
+            margin-left: 5px;
         }
     }
 }
@@ -200,37 +216,45 @@
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 375px) {
     .header-dos{
-        width: 1500px;
+        grid-area: header-dos;
+        height: 490px;
+        .section-header-dos {
+            height: 120px;
+            .img-logo- {
+                left: 120px;
+            }
+        }
         .navbar{
             .inicio-suc {
-                margin-left: 30px;
+                margin-left: 2px;
             }
             .inicio-comp {
-                margin-left: 30px;
+                margin-left: 2px;
             }
             .carta-rese{
                 position: relative;
-                margin-left: 5px;
+                margin-left: 0%;
+                margin-right: 0px;
             }
             .img-inicio {
-                width: 695px;
-                height: 600px;
+                width: 165px;
+        height: 170px;
             }
             .img-carta-dos {
-                width: 695px;
-                height: 600px;
+                width: 165px;
+        height: 170px;
             }
             .img-comprar-dos {
-                width: 695px;
-                height: 600px;
+                width: 165px;
+        height: 170px;
             }
             .img-sucursal-dos {
-                width: 695px;
-                height: 600px;
+                width: 165px;
+        height: 170px;
             }
             .img-reseñas-dos {
-                width: 695px;
-                height: 600px;
+                width: 165px;
+        height: 170px;
             }
         }
     }
@@ -238,27 +262,34 @@
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 320px) {
     .header-dos{
-        width: 1300px;
+        height: 450px;
+        grid-area: header-dos;
+        .section-header-dos {
+            height: 120px;
+            .img-logo- {
+                left: 90px;
+            }
+        }
         .navbar{
             .img-inicio {
-                width: 590px;
-                height: 600px;
+                width: 135px;
+        height: 150px;
             }
             .img-carta-dos {
-                width: 590px;
-                height: 600px;
+                width: 135px;
+        height: 150px;
             }
             .img-comprar-dos {
-                width: 590px;
-                height: 600px;
+                width: 135px;
+                height: 150px;
             }
             .img-sucursal-dos {
-                width: 590px;
-                height: 600px;
+                width: 135px;
+                height: 150px;
             }
             .img-reseñas-dos {
-                width: 590px;
-                height: 600px;
+                width: 135px;
+        height: 150px;
             }
             .com-rese{
                 position: relative;

@@ -529,7 +529,6 @@
   display: flex;
   flex-direction: row;
   align-content: end;
-  width: 1540px;
 }
 .header-dos .section-header-dos {
   display: flex;
@@ -544,7 +543,7 @@
 .header-dos .navbar {
   display: flex;
   gap: 10px 20px;
-  margin-left: 400px;
+  margin-left: 290px;
   align-items: center;
 }
 .header-dos .navbar .inicio-suc {
@@ -589,14 +588,25 @@
   transform: scale(103%);
 }
 
-/***********MEGA Q PORTATIL***********/
+/******************************************MEGA Q PORTATIL**********************************************************/
 @media (max-width: 1024px) {
-  .img-logo- {
-    height: 200px;
-    padding-top: 30px;
+  .header-dos .section-header-dos .img-logo- {
+    width: 120px;
+    height: 150px;
+    padding-top: 50px;
   }
-  .navbar {
-    margin-left: 400px;
+  .header-dos .navbar {
+    margin-left: 10px;
+    gap: 10px;
+  }
+  .header-dos .navbar .inicio-suc {
+    gap: 10px;
+  }
+  .header-dos .navbar .com-rese {
+    gap: 10px;
+  }
+  .header-dos .navbar .carta-rese {
+    gap: 10px;
   }
 }
 /******************************************MEDIA Q TABLET***********************************************************/
@@ -604,20 +614,22 @@
   .header-dos {
     grid-area: header-dos;
     background-color: rgb(0, 0, 0);
-    height: 800px;
+    height: 365px;
     flex-direction: column;
   }
   .header-dos .section-header-dos {
     display: flex;
     justify-content: center;
-    height: 200px;
+    height: 150px;
   }
   .header-dos .section-header-dos .img-logo- {
-    width: 400px;
-    height: 270px;
-    padding-top: 5px;
-    position: relative;
-    bottom: 30px;
+    position: absolute;
+    width: 200px;
+    height: 190px;
+    left: 280px;
+    -webkit-clip-path: inset(60px 10px 50px 10px);
+            clip-path: inset(60px 10px 50px 10px);
+    padding-top: 0px;
   }
   .header-dos .navbar {
     display: flex;
@@ -627,164 +639,181 @@
   }
   .header-dos .navbar .inicio-suc {
     display: flex;
-    gap: 25px;
+    gap: 10px;
   }
   .header-dos .navbar .com-rese {
     display: flex;
-    gap: 25px;
+    gap: 10px;
   }
   .header-dos .navbar .carta-rese {
     display: flex;
-    gap: 25px;
+    gap: 10px;
   }
   .header-dos .navbar .img-inicio {
-    width: 360px;
-    height: 400px;
-    margin-left: 15px;
+    width: 177px;
+    height: 200px;
+    margin-left: 2px;
   }
   .header-dos .navbar .img-comprar-dos {
-    width: 360px;
-    height: 400px;
+    width: 177px;
+    height: 200px;
     position: relative;
   }
   .header-dos .navbar .img-carta-dos {
-    width: 360px;
-    height: 400px;
+    width: 177px;
+    height: 200px;
     position: relative;
   }
   .header-dos .navbar .img-sucursal-dos {
-    width: 360px;
-    height: 400px;
+    width: 177px;
+    height: 200px;
     position: relative;
   }
   .header-dos .navbar .img-reseñas-dos {
-    width: 360px;
-    height: 400px;
+    width: 177px;
+    height: 200px;
   }
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 425px) {
   .header-dos {
     grid-area: header-dos;
-    height: 1500px;
+    height: 550px;
   }
   .header-dos .section-header-dos {
-    height: 250px;
+    height: 120px;
   }
   .header-dos .section-header-dos .img-logo- {
-    width: 400px;
-    height: 400px;
-    bottom: 70px;
+    width: 150px;
+    height: 150px;
+    left: 150px;
+    -webkit-clip-path: inset(20px 10px 50px 10px);
+            clip-path: inset(20px 10px 50px 10px);
   }
   .header-dos .navbar {
     flex-wrap: wrap;
   }
   .header-dos .navbar .img-inicio {
-    width: 700px;
-    height: 600px;
+    width: 190px;
+    height: 200px;
     position: relative;
     margin-left: 0%;
   }
   .header-dos .navbar .img-carta-dos {
-    width: 700px;
-    height: 600px;
+    width: 190px;
+    height: 200px;
     position: relative;
   }
   .header-dos .navbar .img-comprar-dos {
-    width: 700px;
-    height: 600px;
+    width: 190px;
+    height: 200px;
   }
   .header-dos .navbar .img-sucursal-dos {
-    width: 700px;
-    height: 600px;
+    width: 190px;
+    height: 200px;
   }
   .header-dos .navbar .img-reseñas-dos {
-    width: 700px;
-    height: 600px;
+    width: 190px;
+    height: 200px;
   }
   .header-dos .navbar .inicio-suc {
     flex-direction: column;
-    margin-left: 40px;
+    margin-left: 2px;
   }
   .header-dos .navbar .inicio-comp {
     flex-direction: column;
-    margin-left: 40px;
+    margin-left: 2px;
   }
   .header-dos .navbar .com-rese {
     flex-direction: column;
-    margin-right: 40px;
+    margin-right: 10px;
   }
   .header-dos .navbar .carta-rese {
     flex-direction: column;
-    margin-right: 40px;
-    margin-left: 30px;
+    margin-right: 10px;
+    margin-left: 5px;
   }
   .header-dos .navbar .carta-suc {
     flex-direction: column;
-    margin-right: 40px;
-    margin-left: 30px;
+    margin-right: 10px;
+    margin-left: 5px;
   }
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 375px) {
   .header-dos {
-    width: 1500px;
+    grid-area: header-dos;
+    height: 490px;
+  }
+  .header-dos .section-header-dos {
+    height: 120px;
+  }
+  .header-dos .section-header-dos .img-logo- {
+    left: 120px;
   }
   .header-dos .navbar .inicio-suc {
-    margin-left: 30px;
+    margin-left: 2px;
   }
   .header-dos .navbar .inicio-comp {
-    margin-left: 30px;
+    margin-left: 2px;
   }
   .header-dos .navbar .carta-rese {
     position: relative;
-    margin-left: 5px;
+    margin-left: 0%;
+    margin-right: 0px;
   }
   .header-dos .navbar .img-inicio {
-    width: 695px;
-    height: 600px;
+    width: 165px;
+    height: 170px;
   }
   .header-dos .navbar .img-carta-dos {
-    width: 695px;
-    height: 600px;
+    width: 165px;
+    height: 170px;
   }
   .header-dos .navbar .img-comprar-dos {
-    width: 695px;
-    height: 600px;
+    width: 165px;
+    height: 170px;
   }
   .header-dos .navbar .img-sucursal-dos {
-    width: 695px;
-    height: 600px;
+    width: 165px;
+    height: 170px;
   }
   .header-dos .navbar .img-reseñas-dos {
-    width: 695px;
-    height: 600px;
+    width: 165px;
+    height: 170px;
   }
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 320px) {
   .header-dos {
-    width: 1300px;
+    height: 450px;
+    grid-area: header-dos;
+  }
+  .header-dos .section-header-dos {
+    height: 120px;
+  }
+  .header-dos .section-header-dos .img-logo- {
+    left: 90px;
   }
   .header-dos .navbar .img-inicio {
-    width: 590px;
-    height: 600px;
+    width: 135px;
+    height: 150px;
   }
   .header-dos .navbar .img-carta-dos {
-    width: 590px;
-    height: 600px;
+    width: 135px;
+    height: 150px;
   }
   .header-dos .navbar .img-comprar-dos {
-    width: 590px;
-    height: 600px;
+    width: 135px;
+    height: 150px;
   }
   .header-dos .navbar .img-sucursal-dos {
-    width: 590px;
-    height: 600px;
+    width: 135px;
+    height: 150px;
   }
   .header-dos .navbar .img-reseñas-dos {
-    width: 590px;
-    height: 600px;
+    width: 135px;
+    height: 150px;
   }
   .header-dos .navbar .com-rese {
     position: relative;
@@ -801,7 +830,6 @@
   display: grid;
   grid-area: main-dos;
   background-color: rgb(106, 174, 174);
-  width: 1540px;
 }
 
 .contenedor {
@@ -893,7 +921,7 @@
 .ca {
   width: 1260px;
   height: 600px;
-  margin-left: 140px;
+  margin-left: 90px;
 }
 
 /******************************************MEDIA Q TABLET***********************************************************/
@@ -1008,9 +1036,6 @@
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 320px) {
-  .main-dos {
-    width: 1300px;
-  }
   .nuestra-carta h1 {
     font-size: 200px;
     margin: 0%;
@@ -1041,27 +1066,25 @@
   display: flex;
   justify-content: space-around;
   color: white;
-  width: 1540px;
 }
 .footer-dos .section-footer-dos {
   display: flex;
   flex-direction: row;
 }
 .footer-dos .section-footer-dos .redes-dos {
-  left: 50px;
   bottom: 5px;
   color: rgb(255, 255, 255);
   font-size: 17px;
   padding: 15px 0px 10px 0px;
+  margin-right: 230px;
 }
 .footer-dos .section-footer-dos .redes-dos h2 {
   font-family: "Josefin Sans", sans-serif;
-  width: 550px;
-  margin-left: 40px;
+  width: 400px;
   margin-bottom: 20px;
 }
 .footer-dos .section-footer-dos .redes-dos a {
-  margin-left: 90px;
+  margin-left: 50px;
 }
 .footer-dos .section-footer-dos .redes-dos a .img-face-dos:hover {
   transform: scale(115%);
@@ -1074,8 +1097,8 @@
 }
 .footer-dos .section-footer-dos .contacto-dos {
   text-align: center;
-  margin-left: 500px;
   padding: 15px 0px 10px 0px;
+  margin-right: 100px;
 }
 .footer-dos .section-footer-dos .contacto-dos h2 {
   font-family: "Josefin Sans", sans-serif;
@@ -1097,11 +1120,24 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+/******************************************MEGA Q PORTATIL**********************************************************/
+@media (max-width: 1024px) {
+  .footer-dos .section-footer-dos .contacto-dos {
+    margin-right: 30px;
+  }
+  .footer-dos .section-footer-dos .redes-dos {
+    margin-right: 0px;
+    margin-left: 70px;
+  }
+  .footer-dos .section-footer-dos .redes-dos h2 {
+    width: 470px;
+  }
+}
 /******************************************MEDIA Q TABLET***********************************************************/
 @media (max-width: 778px) {
   .footer-dos {
     grid-area: footer-dos;
-    height: 300px;
+    height: 220px;
     margin-top: auto;
     justify-content: space-around;
   }
@@ -1109,48 +1145,49 @@
     display: flex;
     flex-direction: row;
   }
+  .footer-dos .section-footer-dos .redes-dos {
+    margin-left: 0px;
+  }
   .footer-dos .section-footer-dos .redes-dos h2 {
-    font-size: 50px;
+    font-size: 25px;
     text-align: center;
     margin-left: 0%;
+    width: 320px;
   }
   .footer-dos .section-footer-dos .redes-dos a {
-    margin-left: 80px;
+    margin-left: 50px;
   }
   .footer-dos .section-footer-dos .redes-dos a .img-face-dos {
-    width: 100px;
+    width: 40px;
     height: 100px;
-    width: 70px;
   }
   .footer-dos .section-footer-dos .redes-dos a .img-insta-dos {
-    width: 100px;
+    width: 40px;
     height: 100px;
-    width: 70px;
   }
   .footer-dos .section-footer-dos .redes-dos a .img-twitter-dos {
-    width: 100px;
+    width: 40px;
     height: 100px;
-    width: 70px;
   }
   .footer-dos .section-footer-dos .contacto-dos {
-    font-size: 35px;
-    margin-left: 60px;
+    font-size: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .footer-dos .section-footer-dos .contacto-dos h2 {
-    font-size: 50px;
-    margin-bottom: 30px;
+    font-size: 25px;
   }
   .footer-dos .section-footer-dos .contacto-dos h3 {
-    font-size: 35px;
+    font-size: 20px;
     text-align: center;
     padding: 15px 5px 5px 0px;
-    width: 100%;
     margin-bottom: 0%;
+    width: 350px;
   }
   .grid-container-dos {
     display: grid;
     grid-template-areas: "header-dos header-dos header-dos" "main-dos main-dos main-dos" "footer-dos footer-dos footer-dos";
-    grid-template-rows: 620px 1fr 300px;
+    grid-template-rows: 365px 1fr 220px;
     grid-template-columns: auto;
   }
 }
@@ -1158,7 +1195,7 @@
 @media (max-width: 425px) {
   .footer-dos {
     grid-area: footer-dos;
-    height: 600px;
+    height: 400px;
   }
   .footer-dos .section-footer-dos {
     display: flex;
@@ -1166,53 +1203,116 @@
     margin-left: 0%;
   }
   .footer-dos .section-footer-dos .redes-dos {
-    margin: 20px;
+    margin: 10px;
   }
   .footer-dos .section-footer-dos .redes-dos h2 {
-    font-size: 60px;
-    padding: 15px 5px 0px 5px;
-    width: 1000px;
+    font-size: 25px;
+    padding: 15px 5px 0px 0px;
+    width: 400px;
   }
   .footer-dos .section-footer-dos .redes-dos a {
-    margin-left: 200px;
+    margin-left: 70px;
   }
   .footer-dos .section-footer-dos .redes-dos a .img-insta-dos {
-    width: 90px;
+    width: 40px;
+    height: 50px;
   }
   .footer-dos .section-footer-dos .redes-dos a .img-face-dos {
-    width: 90px;
+    width: 40px;
+    height: 50px;
   }
   .footer-dos .section-footer-dos .redes-dos a .img-twitter-dos {
-    width: 90px;
+    width: 40px;
+    height: 50px;
   }
   .footer-dos .section-footer-dos .contacto-dos h2 {
-    font-size: 60px;
+    font-size: 25px;
     margin: 0px;
   }
   .footer-dos .section-footer-dos .contacto-dos h3 {
-    font-size: 50px;
+    font-size: 20px;
     padding-left: 5px;
+    width: 380px;
+    margin-left: 25px;
   }
   .grid-container-dos {
     display: grid;
-    grid-template-areas: "header-dos header-dos header-dos" "main-dos main-dos main-dos" "footer-dos footer-dos footer-dos";
-    grid-template-rows: 1500px 1fr 600px;
+    grid-template-areas: "header-dos" "main-dos" "footer-dos";
+    grid-template-rows: 550px 1fr 400px;
     grid-template-columns: auto;
   }
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 375px) {
   .footer-dos {
-    width: 1500px;
+    grid-area: footer-dos;
+    height: 320px;
+  }
+  .footer-dos .section-footer-dos .redes-dos a {
+    margin-left: 63px;
+  }
+  .footer-dos .section-footer-dos .redes-dos a .img-insta-dos {
+    width: 30px;
+    height: 40px;
+  }
+  .footer-dos .section-footer-dos .redes-dos a .img-face-dos {
+    width: 30px;
+    height: 40px;
+  }
+  .footer-dos .section-footer-dos .redes-dos a .img-twitter-dos {
+    width: 30px;
+    height: 40px;
+  }
+  .footer-dos .section-footer-dos .redes-dos h2 {
+    font-size: 20px;
+    width: 300px;
+    margin-left: 30px;
+  }
+  .footer-dos .section-footer-dos .contacto-dos h2 {
+    font-size: 20px;
+  }
+  .footer-dos .section-footer-dos .contacto-dos h3 {
+    font-size: 15px;
+    width: 360px;
+    margin-left: 0%;
+  }
+  .grid-container-dos {
+    display: grid;
+    grid-template-areas: "header-dos" "main-dos" "footer-dos";
+    grid-template-rows: 490px 1fr 320px;
+    grid-template-columns: auto;
   }
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 320px) {
   .footer-dos {
-    width: 1300px;
+    grid-area: footer-dos;
+    height: 320px;
   }
-  .redes-dos {
-    margin-left: 20px;
+  .footer-dos .section-footer-dos .redes-dos {
+    position: relative;
+    right: 35px;
+    width: 290px;
+    margin-left: 30px;
+  }
+  .footer-dos .section-footer-dos .redes-dos h2 {
+    width: 250px;
+  }
+  .footer-dos .section-footer-dos .redes-dos a {
+    margin-left: 50px;
+  }
+  .footer-dos .section-footer-dos .contacto-dos {
+    position: relative;
+    right: 30px;
+  }
+  .footer-dos .section-footer-dos .contacto-dos h3 {
+    width: 360px;
+  }
+  .grid-container-dos {
+    display: grid;
+    grid-template-areas: "header-dos" "main-dos" "footer-dos";
+    grid-template-rows: 450px 1fr 320px;
+    grid-template-columns: auto;
   }
 }
 .nuestros-cafes {
@@ -1242,7 +1342,7 @@
   border: 8px solid white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: white;
   border-radius: 20px;
   align-items: center;
@@ -1272,100 +1372,154 @@
 /********************MEDIA Q TABLET*********************/
 @media (max-width: 778px) {
   .nuestros-cafes {
-    font-size: 50px;
+    font-size: 40px;
+  }
+  .nuestros-cafes {
+    font-size: 40px;
+    margin-top: 40px;
+  }
+  .nuestras-cafeteras h1 {
+    font-size: 40px;
+    margin-top: 40px;
+  }
+  .card {
+    border-radius: 30px;
+    width: 220px;
+    height: 300px;
+  }
+  .card a {
+    font-size: 20px;
+  }
+  .card h2 {
+    font-size: 17px;
+  }
+  .card img {
+    width: 150px;
+    height: 180px;
   }
 }
-/**************************MEDIA Q TELEFONO*********************/
+/****************************************************MEDIA Q TELEFONO*********************/
 @media (max-width: 425px) {
   .nuestras-cafeteras {
     margin-top: 0px;
+    margin-bottom: 40px;
   }
   .nuestras-cafeteras h1 {
-    font-size: 120px;
+    font-size: 40px;
     padding: 0px;
   }
   .nuestros-cafes {
-    font-size: 120px;
+    font-size: 40px;
+    margin-bottom: 40px;
   }
   .cafés {
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 10px;
     gap: 50px;
     margin: 0px;
-    margin-left: 120px;
+    margin-left: 50px;
   }
   .cafeteras {
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 10px;
     gap: 50px;
     margin-top: 0px;
-    margin-left: 120px;
+    margin-left: 50px;
+    margin-bottom: 30px;
   }
   .cafeteras-dos {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     gap: 50px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 150px;
+    margin-left: 50px;
   }
   .card {
-    border-radius: 60px;
-    width: 1100px;
-    height: 1200px;
-    margin-left: 70px;
+    border-radius: 30px;
+    width: 300px;
+    height: 350px;
   }
   .card a {
-    font-size: 70px;
+    font-size: 20px;
   }
   .card h2 {
-    font-size: 80px;
+    font-size: 20px;
   }
   .card img {
-    width: 900px;
-    height: 1000px;
+    width: 200px;
+    height: 250px;
+  }
+}
+/******************************************MEDIA Q TELEFONO***********************************************************/
+@media (max-width: 375px) {
+  .nuestros-cafes {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .nuestras-cafeteras {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .card {
+    border-radius: 30px;
+    width: 250px;
+    height: 300px;
+  }
+  .card a {
+    font-size: 20px;
+  }
+  .card h2 {
+    font-size: 20px;
+  }
+  .card img {
+    width: 150px;
+    height: 200px;
   }
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 320px) {
-  .main-dos {
-    width: 1300px;
-  }
-  .cafés {
-    margin-left: 0px;
-    width: 1000px;
-  }
-  .cafeteras {
-    margin-left: 0px;
-    width: 1000px;
-  }
-  .cafeteras-dos {
-    margin-left: 0px;
-    width: 1000px;
+  .nuestras-cafeteras {
+    position: relative;
+    right: 30px;
   }
   .nuestras-cafeteras h1 {
-    font-size: 100px;
+    font-size: 30px;
   }
   .nuestros-cafes {
-    font-size: 100px;
+    font-size: 30px;
+    position: relative;
+    right: 30px;
   }
   .card {
-    width: 1000px;
-    height: 1200px;
-    margin-left: 120px;
+    border-radius: 30px;
+    width: 250px;
+    height: 300px;
   }
   .card a {
-    font-size: 60px;
+    font-size: 20px;
   }
   .card h2 {
-    font-size: 60px;
+    font-size: 20px;
   }
   .card img {
-    width: 700px;
-    height: 800px;
+    width: 150px;
+    height: 200px;
+  }
+  .cafés {
+    position: relative;
+    right: 35px;
+  }
+  .cafeteras {
+    position: relative;
+    right: 35px;
+  }
+  .cafeteras-dos {
+    position: relative;
+    right: 35px;
   }
 }
 .text-suc h1 {
@@ -1466,9 +1620,6 @@
 }
 /*********************MEDIA Q TELEFONO*****************************/
 @media (max-width: 375px) {
-  .main-dos {
-    width: 1500px;
-  }
   .text-suc h1 {
     width: 1500px;
   }

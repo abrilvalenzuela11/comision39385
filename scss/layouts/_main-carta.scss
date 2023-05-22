@@ -2,7 +2,6 @@
     display: grid;
     grid-area: main-dos;
     background-color:rgb(106, 174, 174) ;
-    width:1540px;
 }
 .contenedor{
     flex-wrap: wrap;
@@ -82,7 +81,7 @@
 .ca {
 	width: 1260px;
 	height: 600px;
-	margin-left: 140px;
+	margin-left: 90px;
 }
 /******************************************MEDIA Q TABLET***********************************************************/
 @media (max-width: 778px){
@@ -198,9 +197,6 @@
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 320px) {
-    .main-dos{
-        width: 1300px;
-    }
     .nuestra-carta {
         h1{
             font-size: 200px;
