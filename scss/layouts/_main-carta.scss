@@ -83,27 +83,46 @@
 	height: 600px;
 	margin-left: 90px;
 }
+.ca {
+    width: 1260px;
+    height: 600px;
+    margin-left: 90px;
+}
+/******************************************MEGA Q PORTATIL**********************************************************/
+@media (max-width: 1024px){
+    .carta{
+        justify-content: space-evenly;
+    }
+    .comida-dulce{
+        margin-left: 50px;
+    }
+    .ca {
+        width: 950px;
+        height: 500px;
+        margin-left: 30px;
+    }
+}
 /******************************************MEDIA Q TABLET***********************************************************/
 @media (max-width: 778px){
     .main-dos{
         grid-area: main-dos;
     }
     .nuestra-carta {
-        font-size: 70px;
+        font-size: 40px;
         margin-bottom: 50px;
         margin-top: 50px;
     }
     .beb {
-        width: 200px;
-        margin-left: 70px;
+        width: 150px;
+        margin-left: 40px;
     }
     .com {
-        width: 380px;
-        margin-left: 20px;
+        width: 250px;
+        margin-left: 15px;
     }
     .com-s {
         width: 400px;
-        margin-left: 150px;
+        margin-left: 50px;
     }
     .beb-dul {
         display: flex;
@@ -114,28 +133,28 @@
         flex-direction: column;
     }
     .bebidas {
-        width: 400px;
-        height: 1250px;
-        font-size: 45px;
+        width: 300px;
+        height: 800px;
+        font-size: 30px;
     }
     .comida-dulce {
-        width: 500px;
-        height: 1250px;
-        font-size: 45px;
+        width: 340px;
+        height: 800px;
+        font-size: 30px;
     }
     .comida-salada {
-        width: 800px;
-        height: 1100px;
-        font-size: 45px;
+        width: 580px;
+        height: 780px;
+        font-size: 30px;
         margin-top: 50px;
-        margin-left: 380px;
+        margin-left: 100px;
     }
     .ca {
-        margin-left: 40px;
-        width: 1450px;
-        height: 750px;
+        margin-left: 25px;
+        width: 700px;
+        height: 500px;
     }
-    
+
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 425px) {
@@ -144,82 +163,107 @@
         height: 1fr;
     }
     .nuestra-carta {
-        font-size: 100px;
+        font-size: 30px;
     }
     .beb-dul {
         display: flex;
         flex-direction: column;
     }
     .beb{
-        width: 350px;
-        margin-left: 300px;
+        width: 130px;
+        margin-left: 50px;
     }
     .com {
-        margin-left: 150px;
-        width: 650px;
+        margin-left: 0px;
+        width: 230px;
     }
     .com-s {
-        margin-left: 300px;
-        width: 700px;
+        margin-left: 50px;
+        width: 240px;
     }
     .bebidas {
-        margin-left: 250px;
-        width: 1000px;
+        margin-left: 50px;
+        width: 300px;
         margin-bottom: 50px;
-        font-size: 80px;
-        height: 2100px;
+        font-size: 25px;
+        height: 700px;
     }
     .comida-dulce {
-        margin-left: 250px;
-        font-size: 80px;
-        height: 2100px;
-        width: 1000px;
+        margin-left: 50px;
+        font-size: 25px;
+        height: 700px;
+        width: 300px;
     }
     .comida-salada {
-        margin-left: 50px;
-        width: 1400px;
-        font-size: 80px;
-        height: 2000px;
+        margin-left: 5px;
+        width: 400px;
+        font-size: 24px;
+        height: 700px;
     }
     .ca {
-        margin: 10px 10px 10px 20px;
-        width: 1500px;
-        height: 1050px;
+        margin: 10px 0px 10px 5px;
+        width: 400px;
+        height: 300px;
     }
     
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 375px) {
+    .com-s{
+        margin-left: 10px;
+        width: 190px;
+    }
+    .beb{
+        width: 100px;
+        margin-left: 50px;
+    }
+    .com {
+        margin-left: 0px;
+        width: 180px;
+    }
+    .comida-salada{
+        width: 330px;
+        height: 780px;
+        margin-left: 15px;
+    }
+    .bebidas{
+        margin-left: 25px;
+    }
+    .comida-dulce{
+        margin-left: 25px;
+    }
     .ca {
-        margin: 10px 10px 10px 15px;
-        width: 1470px;
+        width: 360px;
     }
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 320px) {
-    .nuestra-carta {
-        h1{
-            font-size: 200px;
-            margin: 0%;
-        }
+    .nuestra-carta{
+        font-size: 25px;
     }
     .bebidas {
-        margin-left: 150px;
+        margin-left: 10px;
+        font-size: 20px;
+        width: 250px;
+        height: 540px;
     }
     .comida-dulce {
-        margin-left: 150px;
+        margin-left: 10px;
+        font-size: 20px;
+        width: 250px;
+        height: 540px;
     }
     .comida-salada {
-        margin-left: 80px;
-        width: 1100px;
-        height: 2300px;
-    }
-    .com-s {
-        margin-left: 180px;
+        margin-left: 5px;
+        font-size: 20px;
+        width: 280px;
+        height: 650px;
     }
     .ca {
-        width: 1270px;
-        height: 1000px;
-        margin-left: 0%;
+        width: 290px;
+        height: 250px;
+    }
+    .carousel-control-next{
+        right: 50px;
     }
 }
