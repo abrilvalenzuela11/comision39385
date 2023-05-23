@@ -33,7 +33,6 @@
     }
 }
 .imagen-principal {
-	padding: 0px 5px 0px 8px;
 	position: relative;
 	display: inline-block;
     .img-principal {
@@ -80,6 +79,12 @@
 }
 /******************************************MEDIA Q TABLET***********************************************************/
 @media (max-width: 778px){
+.contenedor{
+    a{
+        padding: 0%;
+    }
+}
+
     .reseñas-comprar {
         display: flex;
         margin-top: 100px;
@@ -95,10 +100,12 @@
     .reseña-img {
         width: 177px;
         height: 200px;
+        margin-left: 8px;
     }
     .comprar {
         width: 177px;
         height: 200px;
+        margin-left: 8px;
     }
     .carta-sucursal {
         display: flex;
@@ -107,11 +114,13 @@
     .carta-img {
         width: 177px;
         height: 200px;
-        
+        margin-left: 8px;
+
     }
     .sucursal {
         width: 177px;
         height: 200px;
+        margin-left: 8px;
     }
 
     .imagen-principal {
@@ -132,18 +141,17 @@
 .comprar {
 	display: flex;
 	flex-direction: column;
-	margin: 0%;
 }
 .reseñas-comprar {
 	display: flex;
 	flex-direction: column;
     margin-top: 60px;
     .reseña-img{
-        width: 190px;
+        width: 192px;
         height: 200px;
     }
     .comprar{
-        width: 190px;
+        width: 192px;
         height: 200px;
     }
 }
@@ -152,18 +160,15 @@
 	flex-direction: column;
     margin-top: 60px;
     .carta-img{
-        width: 190px;
+        width: 192px;
         height: 200px;
         
     }
     .sucursal{
-        width: 190px;
+        width: 192px;
         height: 200px;
-        
+
     }
-}
-.sucursal {
-	margin: 0%;
 }
 .vlz {
 	left: 150px;
@@ -186,11 +191,11 @@
 @media (max-width: 375px) {
     .reseñas-comprar {
         .reseña-img{
-            width: 165px;
+            width: 168px;
             height: 170px;
         }
         .comprar{
-            width: 165px;
+            width: 168px;
             height: 170px;
         }
     }
@@ -198,11 +203,11 @@
         display: flex;
         flex-direction: column;
         .carta-img{
-            width: 165px;
+            width: 168px;
             height: 170px;
         }
         .sucursal{
-            width: 165px;
+            width: 168px;
             height: 170px;
         }
     }
@@ -223,11 +228,11 @@
 @media (max-width: 320px) {
     .reseñas-comprar {
         .reseña-img{
-            width: 137px;
+            width: 140px;
             height: 150px;
         }
         .comprar{
-            width: 137px;
+            width: 140px;
             height: 150px;
         }
     }
@@ -235,11 +240,11 @@
         display: flex;
         flex-direction: column;
         .carta-img{
-            width: 137px;
+            width: 140px;
             height: 150px;
         }
         .sucursal{
-            width: 137px;
+            width: 140px;
             height: 150px;
 
         }

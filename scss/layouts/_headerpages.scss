@@ -80,6 +80,13 @@
         .carta-rese{
             gap: 10px;
         }
+        .inicio-comp{
+            gap: 10px;
+        }
+        .carta-suc{
+            gap: 10px;
+        }
+
     }
 }
 }
@@ -234,7 +241,10 @@
             .carta-rese{
                 position: relative;
                 margin-left: 0%;
-                margin-right: 0px;
+                margin-right: 0%;
+            }
+            .carta-suc{
+                margin-right: 0%;
             }
             .img-inicio {
                 width: 165px;
