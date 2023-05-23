@@ -19,7 +19,7 @@
             margin-bottom: 10px;
             }
             a{
-                margin-left: 90px;
+                margin-left: 60px;
                 .img-face-dos:hover{
                     transform: scale(115%);
                 }
@@ -110,6 +110,7 @@
                 .img-twitter-dos {
                     width: 40px;
                     height: 100px;
+                    margin-right: 70px;
                 }
             }
         }
@@ -154,7 +155,7 @@
                     width: 400px;
                 }
                 a {
-                    margin-left: 70px;
+                    margin-left: 60px;
                     .img-insta-dos {
                         width: 40px;
                         height: 50px;
@@ -166,6 +167,7 @@
                     .img-twitter-dos {
                         width: 40px;
                         height: 50px;
+                        margin-right: 60px;
                     }
                 }
             }
@@ -198,7 +200,7 @@
         .section-footer-dos{
         .redes-dos{
             a {
-                margin-left: 63px;
+                margin-left: 50px;
                 .img-insta-dos {
                     width: 30px;
                     height: 40px;
@@ -215,7 +217,7 @@
             h2{
                 font-size: 20px;
                 width: 300px;
-                margin-left: 30px;
+                margin-left: 25px;
             }
         }
         .contacto-dos{
@@ -249,22 +251,25 @@
     .section-footer-dos{
         .redes-dos{
             position: relative;
-            right: 35px;
+            right:30px;
             width: 290px;
             margin-left: 30px;
             h2{
                 width: 250px;
             }
             a{
-                margin-left: 50px;
+                margin-left: 40px;
+                .img-twitter-dos{
+                    margin-right: 40px;
+                }
             }
     
         }
         .contacto-dos{
-            position: relative;
-            right: 30px;
             h3{
-            width: 350px;
+            width: 200px;
+            position: relative;
+            left: 60px;
             }
         }
     }
