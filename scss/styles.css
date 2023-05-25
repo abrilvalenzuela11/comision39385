@@ -1153,6 +1153,19 @@
 .footer-dos .section-footer-dos .redes-dos a .img-twitter-dos:hover {
   transform: scale(115%);
 }
+.footer-dos .section-footer-dos .redes-dos a .img-face-dos {
+  width: 40px;
+  height: 60px;
+}
+.footer-dos .section-footer-dos .redes-dos a .img-insta-dos {
+  width: 40px;
+  height: 60px;
+}
+.footer-dos .section-footer-dos .redes-dos a .img-twitter-dos {
+  width: 40px;
+  height: 60px;
+  margin-right: 70px;
+}
 .footer-dos .section-footer-dos .contacto-dos {
   text-align: center;
   padding: 15px 0px 10px 0px;
@@ -1190,6 +1203,7 @@
   }
   .footer-dos .section-footer-dos .redes-dos h2 {
     width: 470px;
+    font-size: 25px;
   }
 }
 /******************************************MEDIA Q TABLET***********************************************************/
@@ -1445,7 +1459,6 @@
     margin-top: 40px;
   }
   .card {
-    border-radius: 30px;
     width: 220px;
     height: 300px;
   }

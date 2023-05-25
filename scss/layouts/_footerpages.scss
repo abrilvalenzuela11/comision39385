@@ -29,6 +29,19 @@
                 .img-twitter-dos:hover{
                     transform: scale(115%);
                 }
+                .img-face-dos {
+                    width: 40px;
+                    height: 60px;
+                }
+                .img-insta-dos {
+                    width: 40px;
+                    height: 60px;
+                }
+                .img-twitter-dos {
+                    width: 40px;
+                    height: 60px;
+                    margin-right: 70px;
+                }
             }
         }
         .contacto-dos{
@@ -73,6 +86,7 @@
                 text-align: center;
                 h2{
                     width: 470px;
+                    font-size:25px;
                 }
             }
         }
