@@ -75,7 +75,7 @@
     height: 60px;
   }
   .buscar {
-    padding: 30px 30px;
+    padding: 30px 10px;
     height: 50px;
     position: relative;
   }
@@ -229,68 +229,61 @@
     flex-direction: column;
   }
   .reseñas-comprar {
-    display: flex;
-    flex-direction: column;
     margin-top: 60px;
   }
   .reseñas-comprar .reseña-img {
-    width: 192px;
-    height: 200px;
+    width: 93px;
+    height: 100px;
+    margin-left: 5px;
   }
   .reseñas-comprar .comprar {
-    width: 192px;
-    height: 200px;
+    width: 93px;
+    height: 100px;
   }
   .carta-sucursal {
-    display: flex;
-    flex-direction: column;
     margin-top: 60px;
   }
   .carta-sucursal .carta-img {
-    width: 192px;
-    height: 200px;
+    width: 93px;
+    height: 100px;
   }
   .carta-sucursal .sucursal {
-    width: 192px;
-    height: 200px;
+    width: 93px;
+    height: 100px;
   }
   .vlz {
     left: 150px;
-    -webkit-clip-path: inset(50px 0px 50px 0px);
-            clip-path: inset(50px 0px 50px 0px);
-    width: 150px;
-    height: 150px;
+    -webkit-clip-path: inset(50px 0px 30px 0px);
+            clip-path: inset(50px 0px 30px 0px);
+    width: 120px;
+    height: 140px;
   }
-  .img-principal {
-    padding: 10px 0px 0px;
+  .imagen-principal .img-principal {
+    padding: 4px 0px 0px;
+    height: 430px;
   }
   .imagen-principal h2 {
     font-size: 2rem;
     width: 400px;
   }
-  /******************************************MEDIA Q TELEFONO 375***********************************************************/
-  /******************************************MEDIA Q TELEFONO 320***********************************************************/
 }
-@media (max-width: 425px) and (max-width: 375px) {
+/******************************************MEDIA Q TELEFONO 375***********************************************************/
+@media (max-width: 375px) {
   .reseñas-comprar .reseña-img {
-    width: 168px;
-    height: 170px;
+    width: 82px;
+    height: 90px;
   }
   .reseñas-comprar .comprar {
-    width: 168px;
-    height: 170px;
-  }
-  .carta-sucursal {
-    display: flex;
-    flex-direction: column;
+    width: 82px;
+    height: 90px;
   }
   .carta-sucursal .carta-img {
-    width: 168px;
-    height: 170px;
+    width: 82px;
+    height: 90px;
   }
   .carta-sucursal .sucursal {
-    width: 168px;
-    height: 170px;
+    width: 82px;
+    height: 90px;
   }
   .vlz {
     left: 120px;
@@ -300,35 +293,30 @@
   }
   .imagen-principal h2 {
     font-size: 2rem;
-    width: 365px;
+    width: 362px;
   }
 }
-@media (max-width: 425px) and (max-width: 320px) {
+/******************************************MEDIA Q TELEFONO 320***********************************************************/
+@media (max-width: 320px) {
   .reseñas-comprar .reseña-img {
-    width: 140px;
-    height: 150px;
+    width: 67px;
+    height: 80px;
   }
   .reseñas-comprar .comprar {
-    width: 140px;
-    height: 150px;
-  }
-  .carta-sucursal {
-    display: flex;
-    flex-direction: column;
+    width: 67px;
+    height: 80px;
   }
   .carta-sucursal .carta-img {
-    width: 140px;
-    height: 150px;
+    width: 67px;
+    height: 80px;
   }
   .carta-sucursal .sucursal {
-    width: 140px;
-    height: 150px;
+    width: 67px;
+    height: 80px;
   }
   .vlz {
     left: 80px;
   }
-}
-@media (max-width: 425px) {
   .imagen-principal h2 {
     font-size: 2rem;
     width: 300px;
@@ -445,14 +433,14 @@
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 425px) {
   .footer {
-    height: 300px;
+    height: 250px;
   }
   .section-footer {
     display: flex;
     flex-direction: column;
   }
   .redes {
-    margin-right: 40px;
+    margin-left: 20px;
   }
   .redes a {
     margin-left: 60px;
@@ -460,17 +448,17 @@
   .redes h2 {
     display: flex;
     text-align: center;
-    font-size: 25px;
-    margin-left: 50px;
+    font-size: 20px;
+    margin-left: 40px;
   }
   .contacto {
     margin-right: 30px;
   }
   .contacto h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
   .contacto h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .img-face {
     width: 40px;
@@ -487,25 +475,36 @@
 }
 /******************************************MEDIA Q TELEFONO 375***********************************************************/
 @media (max-width: 375px) {
+  .redes {
+    width: 350px;
+    margin-left: 0%;
+  }
   .redes a {
-    margin-left: 80px;
+    margin-left: 60px;
   }
   .redes h2 {
-    margin-right: 80px;
+    margin-right: 20px;
     width: 300px;
+  }
+  .contacto {
+    margin-right: 0%;
   }
   .contacto h3 {
     width: 300px;
-    margin-left: 70px;
+    margin-left: 10px;
   }
 }
 /******************************************MEDIA Q TELEFONO 320***********************************************************/
 @media (max-width: 320px) {
+  .footer {
+    height: 300px;
+  }
   .redes {
-    margin-left: 5px;
+    margin-left: 0px;
+    width: 310px;
   }
   .redes a {
-    margin-left: 60px;
+    margin-left: 50px;
   }
   .redes h2 {
     font-size: 20px;
@@ -515,14 +514,14 @@
   .contacto {
     margin-top: 40px;
     width: 300px;
-    margin-right: 10px;
+    margin-right: 0px;
+    margin-left: 0%;
   }
   .contacto h2 {
     font-size: 20px;
   }
   .contacto h3 {
     font-size: 20px;
-    margin-left: 10px;
   }
 }
 .header-dos {
@@ -593,29 +592,29 @@
 /******************************************MEGA Q PORTATIL**********************************************************/
 @media (max-width: 1024px) {
   .header-dos .section-header-dos .img-logo- {
-    width: 120px;
+    width: 140px;
     height: 150px;
     padding-top: 50px;
   }
   .header-dos .navbar {
-    margin-left: 10px;
+    margin-left: 0px;
     gap: 10px;
   }
   .header-dos .navbar .inicio-suc {
-    gap: 10px;
+    gap: 7px;
   }
   .header-dos .navbar .com-rese {
-    gap: 10px;
+    gap: 7px;
   }
   .header-dos .navbar .carta-rese {
-    gap: 10px;
+    gap: 7px;
     margin-right: 0%;
   }
   .header-dos .navbar .inicio-comp {
-    gap: 10px;
+    gap: 7px;
   }
   .header-dos .navbar .carta-suc {
-    gap: 10px;
+    gap: 7px;
   }
 }
 /******************************************MEDIA Q TABLET***********************************************************/
@@ -687,78 +686,73 @@
 @media (max-width: 425px) {
   .header-dos {
     grid-area: header-dos;
-    height: 550px;
+    height: 220px;
   }
   .header-dos .section-header-dos {
-    height: 120px;
+    height: 110px;
   }
   .header-dos .section-header-dos .img-logo- {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 140px;
     left: 150px;
-    -webkit-clip-path: inset(20px 10px 50px 10px);
-            clip-path: inset(20px 10px 50px 10px);
+    -webkit-clip-path: inset(20px 0px 0px 0px);
+            clip-path: inset(20px 0px 0px 0px);
   }
   .header-dos .navbar {
     flex-wrap: wrap;
+    gap: 7px;
+    justify-content: left;
   }
   .header-dos .navbar .img-inicio {
-    width: 190px;
-    height: 200px;
+    width: 95px;
+    height: 100px;
     position: relative;
     margin-left: 0%;
   }
   .header-dos .navbar .img-carta-dos {
-    width: 190px;
-    height: 200px;
+    width: 95px;
+    height: 100px;
     position: relative;
   }
   .header-dos .navbar .img-comprar-dos {
-    width: 190px;
-    height: 200px;
+    width: 95px;
+    height: 100px;
   }
   .header-dos .navbar .img-sucursal-dos {
-    width: 190px;
-    height: 200px;
+    width: 95px;
+    height: 100px;
   }
   .header-dos .navbar .img-reseñas-dos {
-    width: 190px;
-    height: 200px;
+    width: 95px;
+    height: 100px;
   }
   .header-dos .navbar .inicio-suc {
-    flex-direction: column;
-    margin-left: 2px;
-  }
-  .header-dos .navbar .inicio-comp {
-    flex-direction: column;
-    margin-left: 2px;
-  }
-  .header-dos .navbar .com-rese {
-    flex-direction: column;
-    margin-right: 10px;
-  }
-  .header-dos .navbar .carta-rese {
-    flex-direction: column;
-    margin-right: 0px;
-    margin-left: 5px;
+    gap: 7px;
   }
   .header-dos .navbar .carta-suc {
-    flex-direction: column;
-    margin-right: 10px;
-    margin-left: 5px;
+    gap: 7px;
+  }
+  .header-dos .navbar .carta-rese {
+    gap: 7px;
+  }
+  .header-dos .navbar .inicio-comp {
+    gap: 7px;
+  }
+  .header-dos .navbar .com-rese {
+    gap: 7px;
   }
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 375px) {
   .header-dos {
     grid-area: header-dos;
-    height: 490px;
+    height: 220px;
   }
   .header-dos .section-header-dos {
     height: 120px;
   }
   .header-dos .section-header-dos .img-logo- {
-    left: 120px;
+    left: 130px;
   }
   .header-dos .navbar .inicio-suc {
     margin-left: 2px;
@@ -775,67 +769,75 @@
     margin-right: 0%;
   }
   .header-dos .navbar .img-inicio {
-    width: 165px;
-    height: 170px;
+    width: 81px;
+    height: 90px;
   }
   .header-dos .navbar .img-carta-dos {
-    width: 165px;
-    height: 170px;
+    width: 81px;
+    height: 90px;
   }
   .header-dos .navbar .img-comprar-dos {
-    width: 165px;
-    height: 170px;
+    width: 81px;
+    height: 90px;
   }
   .header-dos .navbar .img-sucursal-dos {
-    width: 165px;
-    height: 170px;
+    width: 81px;
+    height: 90px;
   }
   .header-dos .navbar .img-reseñas-dos {
-    width: 165px;
-    height: 170px;
+    width: 81px;
+    height: 90px;
   }
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 320px) {
   .header-dos {
-    height: 450px;
+    height: 200px;
     grid-area: header-dos;
   }
   .header-dos .section-header-dos {
     height: 120px;
   }
   .header-dos .section-header-dos .img-logo- {
-    left: 90px;
+    left: 100px;
+  }
+  .header-dos .navbar {
+    gap: 5px;
   }
   .header-dos .navbar .img-inicio {
-    width: 135px;
-    height: 150px;
+    width: 69px;
+    height: 80px;
   }
   .header-dos .navbar .img-carta-dos {
-    width: 135px;
-    height: 150px;
+    width: 69px;
+    height: 80px;
   }
   .header-dos .navbar .img-comprar-dos {
-    width: 135px;
-    height: 150px;
+    width: 69px;
+    height: 80px;
   }
   .header-dos .navbar .img-sucursal-dos {
-    width: 135px;
-    height: 150px;
+    width: 69px;
+    height: 80px;
   }
   .header-dos .navbar .img-reseñas-dos {
-    width: 135px;
-    height: 150px;
+    width: 69px;
+    height: 80px;
+  }
+  .header-dos .navbar .inicio-suc {
+    gap: 5px;
   }
   .header-dos .navbar .com-rese {
     position: relative;
+    gap: 5px;
   }
   .header-dos .navbar .carta-rese {
     position: relative;
-    margin-left: 5px;
+    gap: 5px;
   }
   .header-dos .navbar .carta-suc {
     position: relative;
+    gap: 5px;
   }
 }
 .main-dos {
@@ -894,45 +896,38 @@
   list-style-type: none;
   font-size: 20px;
   font-family: "Josefin Sans", sans-serif;
-  width: 250px;
-  height: 550px;
   border: 2px solid rgb(7, 149, 192);
   border-radius: 10px;
+  width: 250px;
+  height: 550px;
 }
 
 .comida-dulce {
   color: rgb(0, 0, 0);
-  font-family: "Josefin Sans", sans-serif;
   list-style-type: none;
   font-size: 20px;
-  margin-left: 210px;
-  justify-content: center;
-  width: 250px;
-  height: 550px;
+  font-family: "Josefin Sans", sans-serif;
   border: 2px solid rgb(7, 149, 192);
   border-radius: 10px;
+  margin-left: 210px;
+  width: 250px;
+  height: 550px;
 }
 
 .comida-salada {
   color: rgb(0, 0, 0);
-  font-family: "Josefin Sans", sans-serif;
   list-style-type: none;
   font-size: 20px;
-  margin-left: 20px;
-  width: 360px;
-  height: 550px;
+  font-family: "Josefin Sans", sans-serif;
   border: 2px solid rgb(7, 149, 192);
   border-radius: 10px;
+  margin-left: 20px;
+  width: 380px;
+  height: 550px;
 }
 
 .carousel-inner {
   margin-bottom: 20px;
-}
-
-.ca {
-  width: 1260px;
-  height: 600px;
-  margin-left: 90px;
 }
 
 .ca {
@@ -1053,7 +1048,7 @@
     height: 700px;
   }
   .ca {
-    margin: 10px 0px 10px 5px;
+    margin: 10px 0px 10px 3px;
     width: 400px;
     height: 300px;
   }
@@ -1062,15 +1057,15 @@
 @media (max-width: 375px) {
   .com-s {
     margin-left: 10px;
-    width: 190px;
+    width: 230px;
   }
   .beb {
-    width: 100px;
+    width: 130px;
     margin-left: 50px;
   }
   .com {
     margin-left: 0px;
-    width: 180px;
+    width: 230px;
   }
   .comida-salada {
     width: 330px;
@@ -1091,6 +1086,15 @@
 @media (max-width: 320px) {
   .nuestra-carta {
     font-size: 25px;
+  }
+  .beb {
+    width: 100px;
+  }
+  .com {
+    width: 180px;
+  }
+  .com-s {
+    width: 190px;
   }
   .bebidas {
     margin-left: 10px;
@@ -1269,7 +1273,7 @@
 @media (max-width: 425px) {
   .footer-dos {
     grid-area: footer-dos;
-    height: 400px;
+    height: 330px;
   }
   .footer-dos .section-footer-dos {
     display: flex;
@@ -1280,7 +1284,7 @@
     margin: 10px;
   }
   .footer-dos .section-footer-dos .redes-dos h2 {
-    font-size: 25px;
+    font-size: 20px;
     padding: 15px 5px 0px 0px;
     width: 400px;
   }
@@ -1301,11 +1305,11 @@
     margin-right: 60px;
   }
   .footer-dos .section-footer-dos .contacto-dos h2 {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0px;
   }
   .footer-dos .section-footer-dos .contacto-dos h3 {
-    font-size: 20px;
+    font-size: 15px;
     padding-left: 5px;
     width: 380px;
     margin-left: 25px;
@@ -1313,7 +1317,7 @@
   .grid-container-dos {
     display: grid;
     grid-template-areas: "header-dos" "main-dos" "footer-dos";
-    grid-template-rows: 550px 1fr 400px;
+    grid-template-rows: 220px 1fr 330px;
     grid-template-columns: auto;
   }
 }
@@ -1354,7 +1358,7 @@
   .grid-container-dos {
     display: grid;
     grid-template-areas: "header-dos" "main-dos" "footer-dos";
-    grid-template-rows: 490px 1fr 320px;
+    grid-template-rows: 220px 1fr 320px;
     grid-template-columns: auto;
   }
 }
@@ -1387,7 +1391,7 @@
   .grid-container-dos {
     display: grid;
     grid-template-areas: "header-dos" "main-dos" "footer-dos";
-    grid-template-rows: 450px 1fr 320px;
+    grid-template-rows: 200px 1fr 320px;
     grid-template-columns: auto;
   }
 }

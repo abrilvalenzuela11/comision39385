@@ -143,47 +143,44 @@
 	flex-direction: column;
 }
 .reseñas-comprar {
-	display: flex;
-	flex-direction: column;
     margin-top: 60px;
     .reseña-img{
-        width: 192px;
-        height: 200px;
+        width: 93px;
+        height: 100px;
+        margin-left: 5px;
     }
     .comprar{
-        width: 192px;
-        height: 200px;
+        width: 93px;
+        height: 100px;
     }
 }
 .carta-sucursal {
-	display: flex;
-	flex-direction: column;
     margin-top: 60px;
     .carta-img{
-        width: 192px;
-        height: 200px;
-        
+        width: 93px;
+        height: 100px;
     }
     .sucursal{
-        width: 192px;
-        height: 200px;
-
+        width: 93px;
+        height: 100px;
     }
 }
 .vlz {
 	left: 150px;
-	clip-path: inset(50px 0px 50px 0px);
-    width: 150px;
-    height: 150px;
-}
-.img-principal {
-	padding: 10px 0px 0px;
+	clip-path: inset(50px 0px 30px 0px);
+    width: 120px;
+    height: 140px;
 }
 .imagen-principal{
+    .img-principal {
+        padding: 4px 0px 0px;
+        height: 430px;
+    }
     h2 {
 		font-size: 2rem;
 		width: 400px;
 	}
+}
 }
 
 
@@ -191,24 +188,22 @@
 @media (max-width: 375px) {
     .reseñas-comprar {
         .reseña-img{
-            width: 168px;
-            height: 170px;
+            width: 82px;
+            height: 90px;
         }
         .comprar{
-            width: 168px;
-            height: 170px;
+            width: 82px;
+            height: 90px;
         }
     }
     .carta-sucursal {
-        display: flex;
-        flex-direction: column;
         .carta-img{
-            width: 168px;
-            height: 170px;
+            width: 82px;
+            height: 90px;
         }
         .sucursal{
-            width: 168px;
-            height: 170px;
+            width: 82px;
+            height: 90px;
         }
     }
     .vlz {
@@ -220,7 +215,7 @@
     .imagen-principal{
         h2 {
             font-size: 2rem;
-            width: 365px;
+            width: 362px;
         }
     }
 }
@@ -228,31 +223,29 @@
 @media (max-width: 320px) {
     .reseñas-comprar {
         .reseña-img{
-            width: 140px;
-            height: 150px;
+            width: 67px;
+            height: 80px;
         }
         .comprar{
-            width: 140px;
-            height: 150px;
+            width: 67px;
+            height: 80px;
         }
     }
     .carta-sucursal {
-        display: flex;
-        flex-direction: column;
         .carta-img{
-            width: 140px;
-            height: 150px;
+            width: 67px;
+            height: 80px;
         }
         .sucursal{
-            width: 140px;
-            height: 150px;
+            width: 67px;
+            height: 80px;
 
         }
     }
     .vlz {
         left: 80px;
     }
-    }
+
     .imagen-principal{
         h2 {
             font-size: 2rem;

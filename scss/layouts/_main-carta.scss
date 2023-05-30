@@ -41,38 +41,30 @@
 	justify-content: space-evenly;
 	margin-bottom: 25px;
 }
-.bebidas {
-	color: $color_2;
-	list-style-type: none;
+@mixin menu {
+    color: $color_2;
+    list-style-type: none;
 	font-size: 20px;
-	font-family: $font-family_2;
-	width: 250px;
-	height: 550px;
+    font-family: $font-family_2;
 	border: 2px solid rgb(7, 149, 192);
 	border-radius: 10px;
+}
+.bebidas {
+    @include menu;
+	width: 250px;
+	height: 550px;
 }
 .comida-dulce {
-	color: $color_2;
-	font-family: $font-family_2;
-	list-style-type: none;
-	font-size: 20px;
+    @include menu;
 	margin-left: 210px;
-	justify-content: center;
 	width: 250px;
 	height: 550px;
-	border: 2px solid rgb(7, 149, 192);
-	border-radius: 10px;
 }
 .comida-salada {
-	color: $color_2;
-	font-family: $font-family_2;
-	list-style-type: none;
-	font-size: 20px;
+	@include menu;
 	margin-left: 20px;
-	width: 360px;
+	width: 380px;
 	height: 550px;
-	border: 2px solid rgb(7, 149, 192);
-	border-radius: 10px;
 }
 .carousel-inner {
 	margin-bottom: 20px;
@@ -81,11 +73,6 @@
 	width: 1260px;
 	height: 600px;
 	margin-left: 90px;
-}
-.ca {
-    width: 1260px;
-    height: 600px;
-    margin-left: 90px;
 }
 /******************************************MEGA Q PORTATIL**********************************************************/
 @media (max-width: 1024px){
@@ -200,7 +187,7 @@
         height: 700px;
     }
     .ca {
-        margin: 10px 0px 10px 5px;
+        margin: 10px 0px 10px 3px;
         width: 400px;
         height: 300px;
     }
@@ -210,15 +197,15 @@
 @media (max-width: 375px) {
     .com-s{
         margin-left: 10px;
-        width: 190px;
+        width: 230px;
     }
     .beb{
-        width: 100px;
+        width: 130px;
         margin-left: 50px;
     }
     .com {
         margin-left: 0px;
-        width: 180px;
+        width: 230px;
     }
     .comida-salada{
         width: 330px;
@@ -239,6 +226,15 @@
 @media (max-width: 320px) {
     .nuestra-carta{
         font-size: 25px;
+    }
+    .beb{
+        width: 100px;
+    }
+    .com {
+        width: 180px;
+    }
+    .com-s {
+        width: 190px;
     }
     .bebidas {
         margin-left: 10px;

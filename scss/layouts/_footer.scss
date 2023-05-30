@@ -108,31 +108,31 @@
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 425px) {
 .footer {
-	height: 300px;
+	height: 250px;
 }
 .section-footer {
 	display: flex;
 	flex-direction: column;
 }
 .redes {
-    margin-right: 40px;
+margin-left: 20px;
 	a {
 		margin-left: 60px;
 	}
 	h2 {
 		display: flex;
 		text-align: center;
-		font-size: 25px;
-        margin-left: 50px;
+		font-size: 20px;
+        margin-left: 40px;
 	}
 }
 .contacto{
     margin-right: 30px;
     h2{
-        font-size: 30px;
+        font-size: 20px;
     }
     h3{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 .img-face {
@@ -152,28 +152,34 @@
 /******************************************MEDIA Q TELEFONO 375***********************************************************/
 @media (max-width: 375px) {
     .redes {
+        width: 350px;
+        margin-left: 0%;
         a{
-            margin-left: 80px;
+            margin-left: 60px;
         }
         h2 {
-            margin-right: 80px;
+            margin-right: 20px;
             width: 300px;
         }
     }
     .contacto{
+        margin-right: 0%;
         h3{
             width: 300px;
-            margin-left: 70px;
+            margin-left: 10px;
         }
     }
 }
 /******************************************MEDIA Q TELEFONO 320***********************************************************/
 @media (max-width: 320px) {
-
+    .footer {
+        height: 300px;
+    }
     .redes {
-        margin-left: 5px;
+        margin-left: 0px;
+        width: 310px;
         a {
-            margin-left: 60px;
+            margin-left: 50px;
         }
         h2 {
             font-size: 20px;
@@ -184,13 +190,13 @@
     .contacto{
         margin-top: 40px;
         width: 300px;
-        margin-right: 10px;
+        margin-right: 0px;
+        margin-left: 0%;
         h2{
             font-size: 20px;
         }
         h3{
             font-size: 20px;
-            margin-left: 10px;
         }
     }
 }

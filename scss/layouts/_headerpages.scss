@@ -63,29 +63,29 @@
     .header-dos{
         .section-header-dos{
             .img-logo-{
-                width: 120px;
+                width: 140px;
                 height: 150px;
                 padding-top: 50px;
             }
         }
         .navbar {
-        margin-left: 10px;
+        margin-left: 0px;
         gap: 10px;
         .inicio-suc{
-            gap: 10px;
+            gap: 7px;
         }
         .com-rese{
-            gap: 10px;
+            gap: 7px;
         }
         .carta-rese{
-            gap: 10px;
+            gap: 7px;
             margin-right: 0%;
         }
         .inicio-comp{
-            gap: 10px;
+            gap: 7px;
         }
         .carta-suc{
-            gap: 10px;
+            gap: 7px;
         }
 
     }
@@ -161,75 +161,70 @@
 @media (max-width: 425px) {
     .header-dos {
         grid-area: header-dos;
-        height: 550px;
+        height: 220px;
         .section-header-dos {
-            height: 120px;
+            height: 110px;
             .img-logo- {
-                width: 150px;
-                height: 150px;
+                width: 120px;
+                height: 140px;
                 left: 150px;
-                clip-path: inset(20px 10px 50px 10px);
+                clip-path: inset(20px 0px 0px 0px);
             }
         }
         .navbar{
             flex-wrap: wrap;
+            gap: 7px;
+            justify-content: left;
         .img-inicio {
-            width: 190px;
-        height: 200px;
+            width: 95px;
+        height: 100px;
             position: relative;
             margin-left: 0%;
         }
         .img-carta-dos {
-            width: 190px;
-        height: 200px;
+            width: 95px;
+        height: 100px;
             position: relative;
         }
         .img-comprar-dos {
-            width: 190px;
-        height: 200px;
+            width: 95px;
+        height: 100px;
         }
         .img-sucursal-dos {
-            width: 190px;
-        height: 200px;
+            width: 95px;
+        height: 100px;
         }
         .img-reseñas-dos {
-            width: 190px;
-        height: 200px;
+            width: 95px;
+        height: 100px;
         }
-        .inicio-suc {
-            flex-direction: column;
-            margin-left: 2px;
+        .inicio-suc{
+            gap: 7px;
         }
-        .inicio-comp {
-            flex-direction: column;
-            margin-left: 2px;
+        .carta-suc{
+            gap: 7px;
         }
-        .com-rese {
-            flex-direction: column;
-            margin-right: 10px;
+        .carta-rese{
+            gap: 7px;
         }
-        .carta-rese {
-            flex-direction: column;
-            margin-right: 0px;
-            margin-left: 5px;
+        .inicio-comp{
+            gap: 7px;
         }
-        .carta-suc {
-            flex-direction: column;
-            margin-right: 10px;
-            margin-left: 5px;
+        .com-rese{
+            gap: 7px;
         }
-    }
+}
 }
 }
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 375px) {
     .header-dos{
         grid-area: header-dos;
-        height: 490px;
+        height: 220px;
         .section-header-dos {
             height: 120px;
             .img-logo- {
-                left: 120px;
+                left: 130px;
             }
         }
         .navbar{
@@ -248,24 +243,24 @@
                 margin-right: 0%;
             }
             .img-inicio {
-                width: 165px;
-        height: 170px;
+                width: 81px;
+            height: 90px;
             }
             .img-carta-dos {
-                width: 165px;
-        height: 170px;
+                width: 81px;
+            height: 90px;
             }
             .img-comprar-dos {
-                width: 165px;
-        height: 170px;
+                width: 81px;
+            height: 90px;
             }
             .img-sucursal-dos {
-                width: 165px;
-        height: 170px;
+                width: 81px;
+            height: 90px;
             }
             .img-reseñas-dos {
-                width: 165px;
-        height: 170px;
+                width: 81px;
+            height: 90px;
             }
         }
     }
@@ -273,44 +268,50 @@
 /******************************************MEDIA Q TELEFONO***********************************************************/
 @media (max-width: 320px) {
     .header-dos{
-        height: 450px;
+        height: 200px;
         grid-area: header-dos;
         .section-header-dos {
             height: 120px;
             .img-logo- {
-                left: 90px;
+                left: 100px;
             }
         }
         .navbar{
+            gap: 5px;
             .img-inicio {
-                width: 135px;
-        height: 150px;
+                width: 69px;
+            height: 80px;
             }
             .img-carta-dos {
-                width: 135px;
-        height: 150px;
+                width: 69px;
+            height: 80px;
             }
             .img-comprar-dos {
-                width: 135px;
-                height: 150px;
+                width: 69px;
+            height: 80px;
             }
             .img-sucursal-dos {
-                width: 135px;
-                height: 150px;
+                width: 69px;
+            height: 80px;
             }
             .img-reseñas-dos {
-                width: 135px;
-        height: 150px;
+                width: 69px;
+            height: 80px;
+            }
+            .inicio-suc{
+                gap: 5px;
             }
             .com-rese{
                 position: relative;
+                gap: 5px;
             }
             .carta-rese{
                 position: relative;
-                margin-left: 5px;
+                gap: 5px;
             }
             .carta-suc{
                 position: relative;
+                gap: 5px;
             }
         }
     }
