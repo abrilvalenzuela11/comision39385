@@ -327,7 +327,7 @@
 }
 .footer {
   grid-area: footer;
-  background-color: rgb(106, 174, 174);
+  background-color: rgb(137, 181, 181);
   display: flex;
   justify-content: space-around;
 }
@@ -842,7 +842,7 @@
 }
 .main-dos {
   grid-area: main-dos;
-  background-color: rgb(106, 174, 174);
+  background-color: rgb(137, 181, 181);
 }
 
 .contenedor {
